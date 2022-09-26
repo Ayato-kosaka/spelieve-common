@@ -1,5 +1,5 @@
 {
-  "name": "@Ayato-kosaka/spelieve-common",
+  "name": "spelieve-common",
   "version": "1.0.0",
   "description": "Spelieve common library",
   "publishConfig": {
