@@ -30,8 +30,8 @@ jobs:
        run: npm install
 
      # トランスパイルを実行
-     - name: build
-       run: npx tsc
+     # - name: build
+       # run: npx tsc
 
      # パッケージとして公開する
      - name: publish
