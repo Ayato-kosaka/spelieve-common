@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ayato-kosaka/spelieve-interface.git"
+    "url": "git+https://github.com/Ayato-kosaka/spelieve-common.git"
   },
   "author": "Ayato-kosaka",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ayato-kosaka/spelieve-interface/issues"
+    "url": "https://github.com/Ayato-kosaka/spelieve-common/issues"
   },
-  "homepage": "https://github.com/Ayato-kosaka/spelieve-interface#readme",
+  "homepage": "https://github.com/Ayato-kosaka/spelieve-common#readme",
   "devDependencies": {
     "firebase": "9.10.0",
     "@types/react": "18.0.20",
