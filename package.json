@@ -1,7 +1,10 @@
 {
-  "name": "spelieve-common",
+  "name": "@Ayato-kosaka/spelieve-common",
   "version": "1.0.0",
-  "description": "",
+  "description": "Spelieve common library",
+  "publishConfig": {
+   "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
