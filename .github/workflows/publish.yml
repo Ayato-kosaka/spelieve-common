@@ -63,3 +63,10 @@ jobs:
          github_repo: ${{ github.repository }}
          git_commit_sha: ${{ github.sha }}
          git_tag_prefix: "v"
+ 
+     # プシュする
+     - name: push changes
+       run: |
+        git add -a
+        git commit -m "truncate ${VERSION}"
+        git push origin main
