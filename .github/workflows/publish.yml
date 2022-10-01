@@ -33,12 +33,12 @@ jobs:
      # 必要なモジュールをインストール
      - name: install node_modules
        run: npm install
-       env:
-         PG_DATA_ENDPOINT: ${{ secrets.PG_DATA_ENDPOINT }}
 
     # spelieve-gulp を実行
      - name: run spelieve-gulp
        run: npm run truncate
+       env:
+         PG_DATA_ENDPOINT: ${{ secrets.PG_DATA_ENDPOINT }}
 
      # Eslint Prettier を実行
      # - name: build
