@@ -37,7 +37,7 @@ jobs:
      - name: publish
        run: npx can-npm-publish --verbose && npm publish || echo "No need to publish"
        env:
-         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
         
      # バージョン情報を環境変数として設定
      - name: set version to env
