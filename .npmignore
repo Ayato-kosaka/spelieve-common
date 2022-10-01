@@ -1,4 +1,6 @@
 node_modules/
-!node_modules/@types
-!node_modules/@firebase
 .github/
+*.log
+.cache
+__tests__
+.gitpod.yml
