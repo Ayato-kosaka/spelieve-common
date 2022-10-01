@@ -1,18 +1,15 @@
-name: publish my library
+name: publish spelieve library
 
 env:
  CI: true
 
 on:
- push:
-   branches:
-     - main
-   tags:
-     - "!*"
+ schedule:
+  - cron: '0 19 * * *'
 
 jobs:
  publish:
-   name: Setup
+   name: Truncate
    runs-on: ubuntu-latest
    steps:
      - name: checkout
@@ -24,12 +21,25 @@ jobs:
        with:
          node-version: 14.x
          registry-url: https://registry.npmjs.org
+        
+     # バージョンを更新
+     - name: update version
+       run: |
+        git config user.name github-actions[bot]
+        git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+        npm version patch
 
-     # 必要なモジュール（typescript）をインストール
+     # 必要なモジュールをインストール
      - name: install node_modules
        run: npm install
+       env:
+         PG_DATA_ENDPOINT: ${{ secrets.PG_DATA_ENDPOINT }}
 
-     # トランスパイルを実行
+    # spelieve-gulp を実行
+     - name: run spelieve-gulp
+       run: npm run truncate
+
+     # Eslint Prettier を実行
      # - name: build
        # run: npx tsc
 
