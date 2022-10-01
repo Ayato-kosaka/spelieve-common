@@ -67,6 +67,6 @@ jobs:
      # プシュする
      - name: push changes
        run: |
-        git add -a
+        git add -A
         git commit -m "truncate ${VERSION}"
         git push origin main
