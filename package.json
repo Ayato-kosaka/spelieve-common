@@ -1,6 +1,6 @@
 {
   "name": "@Ayato-kosaka/spelieve-common",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Spelieve common library",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -18,10 +18,12 @@
     "url": "https://github.com/Ayato-kosaka/spelieve-common/issues"
   },
   "homepage": "https://github.com/Ayato-kosaka/spelieve-common#readme",
-  "devDependencies": {
+  "dependencies": {
     "@firebase/firestore-types": "^2.5.0",
     "@types/react": "18.0.20",
-    "@types/react-native": "0.70.3",
+    "@types/react-native": "0.70.3"
+  },
+  "devDependencies": {
     "typescript": "4.8.3"
   }
 }
