@@ -1,5 +1,8 @@
 # spelieve-common
 
+## npm
+https://www.npmjs.com/package/spelieve-common
+
 ## How to npm install from other project
 `npm i spelieve-common`
 
