@@ -12,7 +12,7 @@ export interface PDB01MPlaceInterface {
     geometry: GeoPoint;
     geohash: string;
     mapUrl: string;
-    website: string;
+    website?: string;
     address: string;
     phoneNumber: string;
     openingHours: SpelieveInterface.PDB01MPlaceOpeningHoursInterface;
