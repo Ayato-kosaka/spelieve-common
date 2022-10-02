@@ -1,3 +1,3 @@
-export const name = 'MPlanHashtag';
+export const name = 'MPlanTag';
 
-export * from './MPlanHashtagInterface';
+export * from './MPlanTagInterface';
