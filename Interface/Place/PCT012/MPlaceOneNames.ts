@@ -3,7 +3,7 @@ import { PCT012MPlaceOneInterface } from './index';
 /**
  * Export Object of interface names of PCT012MPlaceOne.
  */
-export const PCT012MPlaceOneCols: { [P in keyof PCT012MPlaceOneInterface]: string } = {
+export const PCT012MPlaceOneNames: { [P in keyof PCT012MPlaceOneInterface]: string } = {
     name: 'name',
     imageUrl: 'imageUrl',
     instagramAPIID: 'instagramAPIID',

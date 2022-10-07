@@ -3,7 +3,7 @@ import { IDB03PlansInterface } from './index';
 /**
  * Export Object of interface names of IDB03Plans.
  */
-export const IDB03PlansCols: { [P in keyof IDB03PlansInterface]: string } = {
+export const IDB03PlansNames: { [P in keyof IDB03PlansInterface]: string } = {
     placeReference: 'placeReference',
     placeSpan: 'placeSpan',
     placeStartTime: 'placeStartTime',

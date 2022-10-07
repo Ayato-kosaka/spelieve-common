@@ -3,7 +3,7 @@ import { PDB01MPlaceInterface } from './index';
 /**
  * Export Object of interface names of PDB01MPlace.
  */
-export const PDB01MPlaceCols: { [P in keyof PDB01MPlaceInterface]: string } = {
+export const PDB01MPlaceNames: { [P in keyof PDB01MPlaceInterface]: string } = {
     name: 'name',
     imageUrl: 'imageUrl',
     instagramAPIID: 'instagramAPIID',
