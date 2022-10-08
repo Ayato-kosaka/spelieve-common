@@ -1,3 +1,3 @@
 export const name = 'UpsertPlaceData';
 
-export * from './UpsertPlaceDataBodyInterface';
+export * from './UpsertPlaceDataRequestInterface';
