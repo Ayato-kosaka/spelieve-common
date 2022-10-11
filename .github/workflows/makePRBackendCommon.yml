@@ -10,7 +10,6 @@ on:
 
 jobs:
   makePRBackendCommon:
-    permissions: write-all
     strategy:
       matrix:
         repo: ['Ayato-kosaka/spelieve-backend-tag', 'Ayato-kosaka/spelieve-backend-place']
@@ -18,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: dispatch backend-common-updated
-        uses: peter-evans/repository-dispatch@v1
+        uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ matrix.repo }}
