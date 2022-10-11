@@ -1,0 +1,23 @@
+name: push spelieve bacjend common files
+
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'Backend/**'
+
+jobs:
+  makePRBackendCommon:
+    strategy:
+      matrix:
+        repo: ['Ayato-kosaka/spelieve-backend-tag', 'Ayato-kosaka/spelieve-backend-place']
+    name: dispatch-target-updated
+    runs-on: ubuntu-latest
+    steps:
+      - name: dispatch target-updated
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
+          repository: ${{ matrix.repo }}
+          event-type: target-updated
