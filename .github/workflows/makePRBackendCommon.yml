@@ -16,9 +16,9 @@ jobs:
     name: makePRBackendCommon
     runs-on: ubuntu-latest
     steps:
-      - name: dispatch backend-common-updated
+      - name: dispatch backend-common-update
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repository: ${{ matrix.repo }}
-          event-type: backend-common-updated
+          event-type: backend-common-update
