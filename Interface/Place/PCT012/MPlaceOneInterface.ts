@@ -1,5 +1,5 @@
 import { GeoPoint, Timestamp, DocumentReference } from '@firebase/firestore-types';
-import React { ReactNode } from '@types/react';
+import React, { ReactNode } from '@types/react';
 import * as SpelieveInterface from '../../../Interface';
 
 /**
@@ -17,7 +17,7 @@ export interface PCT012MPlaceOneInterface {
     website?: string;
     address: string;
     phoneNumber: string;
-    openingHours: SpelieveInterface.PDB01MPlaceOpeningHoursInterface;
+    openingHours: SpelieveInterface.PDB01MPlaceOpeningHoursInterface[];
     rating: number;
     popularTags: Array<string>;
     averageStayTime?: Date;

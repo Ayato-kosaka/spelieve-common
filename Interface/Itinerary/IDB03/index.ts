@@ -1,3 +1,5 @@
-export const name = 'Plans';
+export const IDB03 = {
+	"name": "Plans"
+};
 
 export * from './PlansInterface';

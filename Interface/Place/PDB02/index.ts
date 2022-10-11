@@ -1,3 +1,5 @@
-export const name = 'PlaceImages';
+export const PDB02 = {
+	"name": "PlaceImages"
+};
 
 export * from './PlaceImagesInterface';

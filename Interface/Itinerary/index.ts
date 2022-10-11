@@ -1,4 +1,6 @@
-export const name = 'Itinerary';
+export const IService = {
+	"name": "Itinerary"
+};
 
 export * from './IDB01';
 export * from './IDB02';

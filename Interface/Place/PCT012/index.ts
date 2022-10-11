@@ -1,3 +1,5 @@
-export const name = 'MPlaceOne';
+export const PCT012 = {
+	"name": "MPlaceOne"
+};
 
 export * from './MPlaceOneInterface';

@@ -1,4 +1,6 @@
-export const name = 'MPlace';
+export const PDB01 = {
+	"name": "MPlace"
+};
 
 export * from './MPlaceOpeningHoursInterface';
 export * from './MPlaceCloseInterface';

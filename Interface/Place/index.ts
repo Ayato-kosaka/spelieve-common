@@ -1,4 +1,6 @@
-export const name = 'Place';
+export const PService = {
+	"name": "Place"
+};
 
 export * from './PCT011';
 export * from './PPA001';
