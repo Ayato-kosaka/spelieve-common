@@ -6,5 +6,6 @@ import * as SpelieveInterface from '../../../Interface';
  * Export interface of PDB01MPlaceOpeningHours object.
  */
 export interface PDB01MPlaceOpeningHoursInterface {
-    xxx?: ;
+    close: SpelieveInterface.PDB01MPlaceCloseInterface;
+    open: SpelieveInterface.PDB01MPlaceOpenInterface;
 } 

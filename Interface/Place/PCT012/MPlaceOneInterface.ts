@@ -6,6 +6,8 @@ import * as SpelieveInterface from '../../../Interface';
  * Export interface of PCT012MPlaceOne object.
  */
 export interface PCT012MPlaceOneInterface {
+    place_id: string;
+    language: string;
     name: string;
     imageUrl: string;
     instagramAPIID?: string;
@@ -17,7 +19,7 @@ export interface PCT012MPlaceOneInterface {
     phoneNumber: string;
     openingHours: SpelieveInterface.PDB01MPlaceOpeningHoursInterface;
     rating: number;
-    popularTags?: Array<string>;
+    popularTags: Array<string>;
     averageStayTime?: Date;
     createdAt: Date;
     updatedAt: Date;

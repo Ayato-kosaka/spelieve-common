@@ -3,8 +3,9 @@ import React { ReactNode } from '@types/react';
 import * as SpelieveInterface from '../../../Interface';
 
 /**
- * Export interface of PCF002UpsertPlaceDataRequest object.
+ * Export interface of PBL002UpsertPlaceDataBody object.
  */
-export interface PCF002UpsertPlaceDataRequestInterface {
-    placeID: string;
+export interface PBL002UpsertPlaceDataBodyInterface {
+    place_id: string;
+    language: string;
 } 

@@ -4,6 +4,8 @@ import { PCT011MPlacesListInterface } from './index';
  * Export Object of interface names of PCT011MPlacesList.
  */
 export const PCT011MPlacesListNames: { [P in keyof PCT011MPlacesListInterface]: string } = {
+    place_id: 'place_id',
+    language: 'language',
     name: 'name',
     imageUrl: 'imageUrl',
     instagramAPIID: 'instagramAPIID',
