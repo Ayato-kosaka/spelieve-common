@@ -1,4 +1,4 @@
-name: push spelieve bacjend common files
+name: backend PR of common files
 
 on:
   push:
