@@ -12,12 +12,12 @@ jobs:
     strategy:
       matrix:
         repo: ['Ayato-kosaka/spelieve-backend-tag', 'Ayato-kosaka/spelieve-backend-place']
-    name: dispatch-target-updated
+    name: makePRBackendCommon
     runs-on: ubuntu-latest
     steps:
-      - name: dispatch target-updated
+      - name: dispatch backend-common-updated
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ matrix.repo }}
-          event-type: target-updated
+          event-type: backend-common-updated
