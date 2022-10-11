@@ -12,7 +12,7 @@ jobs:
   makePRBackendCommon:
     strategy:
       matrix:
-        repo: ['Ayato-kosaka/spelieve-backend-tag', 'Ayato-kosaka/spelieve-backend-place']
+        repo: ['Ayato-kosaka/spelieve-backend-place']
     name: makePRBackendCommon
     runs-on: ubuntu-latest
     steps:
