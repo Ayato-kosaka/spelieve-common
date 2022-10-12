@@ -6,7 +6,7 @@
     "tsc": "tsc",
     "truncateInterfaces": "truncateInterfaces",
     "truncateFuncList": "truncateFuncList",
-    "truncate": "npm-run-all tsc truncateInterfaces truncateFuncList"
+    "truncate": "npm-run-all truncateInterfaces truncateFuncList tsc"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
     "@types/node": "^18.8.4",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
-    "spelieve-gulp": "latest",
+    "spelieve-gulp": "^1.0.20",
     "ts-node": "^10.9.1",
     "typescript": "4.8.3"
   },
