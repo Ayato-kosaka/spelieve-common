@@ -7,6 +7,6 @@ import * as SpelieveInterface from '../../../Interface';
  * Export interface of PPA001PlacesController object.
  */
 export interface PPA001PlacesControllerInterface {
-    onAutoCompleteClicked: () => void;
-    onPlaceSelected: (data: GooglePlaceData) => void;
+    onAutoCompleteClicked: (data: GooglePlaceData) => void;
+    onPlaceSelected: () => void;
 } 
