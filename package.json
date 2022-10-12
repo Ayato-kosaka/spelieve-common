@@ -19,7 +19,8 @@
   "dependencies": {
     "@firebase/firestore-types": "^2.5.0",
     "@types/react": "18.0.20",
-    "@types/react-native": "0.70.3"
+    "@types/react-native": "0.70.3",
+    "react-native-google-places-autocomplete": "^2.4.1"
   },
   "devDependencies": {
     "spelieve-gulp": "latest",
