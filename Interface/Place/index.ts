@@ -1,7 +1,3 @@
-export const PService = {
-	"name": "Place"
-};
-
 export * from './PCT011';
 export * from './PPA001';
 export * from './PCO001';
