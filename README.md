@@ -12,4 +12,4 @@ https://www.npmjs.com/package/spelieve-common
 `npm i spelieve-common`
 
 ## How to use spelieve Interface in the source code
-`import { ${interface name} } from 'spelieve-common/Interface'`
+`import { ${interface name} } from 'spelieve-common/lib/Interface'`
