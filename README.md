@@ -9,7 +9,7 @@
 https://www.npmjs.com/package/spelieve-common
 
 ## How to npm install from other project
-`npm i spelieve-common`
+`npm i spelieve-common@latest`
 
 ## How to use spelieve Interface in the source code
 `import { ${interface name} } from 'spelieve-common/lib/Interface'`
