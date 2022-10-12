@@ -8,5 +8,5 @@ import * as SpelieveInterface from '../../../Interface';
  */
 export interface PPA001PlacesControllerInterface {
     onAutoCompleteClicked: () => void;
-    onPlaceSelected: () => void;
+    onPlaceSelected: (data: GooglePlaceData) => void;
 } 
