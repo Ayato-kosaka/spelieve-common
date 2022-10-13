@@ -7,6 +7,6 @@ import * as SpelieveInterface from '../../../Interface';
  * Export interface of PCO001SearchPlaceProps object.
  */
 export interface PCO001SearchPlacePropsInterface {
-    onAutoCompleteClicked: () => void;
+    onAutoCompleteClicked: (data: GooglePlaceData, details: GooglePlaceDetail) => void;
     hideDistinct?: boolean;
 } 
