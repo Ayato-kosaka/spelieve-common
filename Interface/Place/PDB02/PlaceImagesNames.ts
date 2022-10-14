@@ -5,5 +5,4 @@ import { PDB02PlaceImagesInterface } from './index';
  */
 export const PDB02PlaceImagesNames: { [P in keyof PDB02PlaceImagesInterface]: string } = {
     imageUrl: 'imageUrl',
-    originalUrl: 'originalUrl',
 }

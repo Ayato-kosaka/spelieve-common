@@ -5,5 +5,4 @@ import { PCT021PlaceImagesListInterface } from './index';
  */
 export const PCT021PlaceImagesListNames: { [P in keyof PCT021PlaceImagesListInterface]: string } = {
     imageUrl: 'imageUrl',
-    originalUrl: 'originalUrl',
 }

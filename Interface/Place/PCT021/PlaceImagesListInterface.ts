@@ -8,5 +8,4 @@ import * as SpelieveInterface from '../../../Interface';
  */
 export interface PCT021PlaceImagesListInterface {
     imageUrl: string;
-    originalUrl: string;
 } 

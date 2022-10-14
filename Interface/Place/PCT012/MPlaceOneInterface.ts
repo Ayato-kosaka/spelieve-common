@@ -11,9 +11,7 @@ export interface PCT012MPlaceOneInterface {
     language: string;
     name: string;
     imageUrl: string;
-    instagramAPIID?: string;
     geometry: GeoPoint;
-    geohash: string;
     mapUrl: string;
     website?: string;
     address: string;

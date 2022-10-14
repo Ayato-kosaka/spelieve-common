@@ -5,9 +5,7 @@ export interface PCT011MPlacesListInterface {
     language: string;
     name: string;
     imageUrl: string;
-    instagramAPIID?: string;
     geometry: GeoPoint;
-    geohash: string;
     mapUrl: string;
     website?: string;
     address: string;

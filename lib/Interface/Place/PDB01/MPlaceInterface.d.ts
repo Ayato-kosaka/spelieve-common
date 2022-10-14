@@ -5,9 +5,7 @@ export interface PDB01MPlaceInterface {
     language: string;
     name: string;
     imageUrl: string;
-    instagramAPIID?: string;
     geometry: GeoPoint;
-    geohash: string;
     mapUrl: string;
     website?: string;
     address: string;
