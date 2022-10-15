@@ -6,6 +6,8 @@ import { PCT011MPlacesListProviderPropsInterface } from './index';
 export const PCT011MPlacesListProviderPropsNames: { [P in keyof PCT011MPlacesListProviderPropsInterface]: string } = {
     parentDocRef: 'parentDocRef',
     children: 'children',
-    initialGeopoint: 'initialGeopoint',
-    initialMaxDistance: 'initialMaxDistance',
+    initialCountry: 'initialCountry',
+    initialAdministrativeAreaLevel1: 'initialAdministrativeAreaLevel1',
+    initialAdministrativeAreaLevel2: 'initialAdministrativeAreaLevel2',
+    initialLocality: 'initialLocality',
 }

@@ -9,6 +9,8 @@ import * as SpelieveInterface from '../../../Interface';
 export interface PCT011MPlacesListProviderPropsInterface {
     parentDocRef?: DocumentReference;
     children: ReactNode;
-    initialGeopoint: GeoPoint;
-    initialMaxDistance: number;
+    initialCountry: string;
+    initialAdministrativeAreaLevel1: string;
+    initialAdministrativeAreaLevel2: string;
+    initialLocality: string;
 } 

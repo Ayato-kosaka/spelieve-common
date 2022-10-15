@@ -76,12 +76,6 @@ export const PMC01201 = {
 export const PMC01202 = {
 	"name": "PlaceDetail"
 };
-export const PDB02 = {
-	"name": "PlaceImages"
-};
-export const PCT021 = {
-	"name": "PlaceImagesList"
-};
 export const PBL002 = {
 	"name": "UpsertPlaceData"
 };

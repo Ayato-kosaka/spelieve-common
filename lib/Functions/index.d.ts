@@ -76,12 +76,6 @@ export declare const PMC01201: {
 export declare const PMC01202: {
     name: string;
 };
-export declare const PDB02: {
-    name: string;
-};
-export declare const PCT021: {
-    name: string;
-};
 export declare const PBL002: {
     name: string;
 };

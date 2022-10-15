@@ -7,6 +7,8 @@ import * as SpelieveInterface from '../../../Interface';
  * Export interface of PPA001PlacesProps object.
  */
 export interface PPA001PlacesPropsInterface {
-    geopoint: GeoPoint;
-    maxDistance: number;
+    country: string;
+    administrativeAreaLevel1?: string;
+    administrativeAreaLevel2?: string;
+    locality?: string;
 } 

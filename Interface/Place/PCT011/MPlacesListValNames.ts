@@ -5,6 +5,8 @@ import { PCT011MPlacesListValInterface } from './index';
  */
 export const PCT011MPlacesListValNames: { [P in keyof PCT011MPlacesListValInterface]: string } = {
     placesList: 'placesList',
-    setGeopoint: 'setGeopoint',
-    setMaxDistance: 'setMaxDistance',
+    setCountry: 'setCountry',
+    setAdministrativeAreaLevel1: 'setAdministrativeAreaLevel1',
+    setAdministrativeAreaLevel2: 'setAdministrativeAreaLevel2',
+    setLocality: 'setLocality',
 }

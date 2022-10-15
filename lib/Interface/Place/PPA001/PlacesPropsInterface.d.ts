@@ -1,5 +1,6 @@
-import { GeoPoint } from '@firebase/firestore-types';
 export interface PPA001PlacesPropsInterface {
-    geopoint: GeoPoint;
-    maxDistance: number;
+    country: string;
+    administrativeAreaLevel1?: string;
+    administrativeAreaLevel2?: string;
+    locality?: string;
 }

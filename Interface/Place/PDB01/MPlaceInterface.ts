@@ -14,12 +14,22 @@ export interface PDB01MPlaceInterface {
     geometry: GeoPoint;
     mapUrl: string;
     website?: string;
-    address: string;
-    phoneNumber: string;
+    formatted_address: string;
+    country: string;
+    administrativeAreaLevel1?: string;
+    administrativeAreaLevel2?: string;
+    locality?: string;
+    sublocalityLevel1?: string;
+    sublocalityLevel2?: string;
+    sublocalityLevel3?: string;
+    sublocalityLevel4?: string;
+    premise?: string;
+    formatted_phone_number: string;
     openingHours: SpelieveInterface.PDB01MPlaceOpeningHoursInterface[];
     rating: number;
     popularTags: Array<string>;
     averageStayTime?: Timestamp;
     createdAt: Timestamp;
     updatedAt: Timestamp;
+    photoUrls: Array<string>;
 } 
