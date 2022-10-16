@@ -46,6 +46,7 @@ jobs:
 
     # lib を削除する
      - name: run clean
+       run: npm run clean
 
     # typescript をコンパイルし、lib に配置する
      - name: run tsc
