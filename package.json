@@ -8,7 +8,7 @@
     "regenInterfaces": "regenInterfaces",
     "regenModels": "regenModels",
     "regenConsts": "regenConsts",
-    "truncate": "npm-run-all regenInterfaces regenModels regenConsts"
+    "regen": "npm-run-all regenInterfaces regenModels regenConsts"
   },
   "repository": {
     "type": "git",

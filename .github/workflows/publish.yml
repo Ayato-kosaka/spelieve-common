@@ -36,7 +36,7 @@ jobs:
 
     # spelieve-gulp を実行
      - name: run spelieve-gulp
-       run: npm run truncate
+       run: npm run regen
        env:
          PG_DATA_ENDPOINT: ${{ secrets.PG_DATA_ENDPOINT }}
 
