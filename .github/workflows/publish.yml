@@ -44,7 +44,10 @@ jobs:
      # - name: build
        # run: npx tsc
 
-    # typescript をコンパイルし、libに配置する
+    # lib を削除する
+     - name: run clean
+
+    # typescript をコンパイルし、lib に配置する
      - name: run tsc
        run: npm run tsc
 
