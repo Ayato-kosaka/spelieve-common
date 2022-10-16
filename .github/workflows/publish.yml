@@ -44,6 +44,10 @@ jobs:
      # - name: build
        # run: npx tsc
 
+    # typescript をコンパイルし、libに配置する
+     - name: run tsc
+       run: npm run tsc
+
      # パッケージとして公開する
      - name: publish
        run: npx can-npm-publish --verbose && npm publish --access=public || echo "No need to publish"

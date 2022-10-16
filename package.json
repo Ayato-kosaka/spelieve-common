@@ -4,9 +4,11 @@
   "description": "Spelieve common library",
   "scripts": {
     "tsc": "tsc",
-    "truncateInterfaces": "truncateInterfaces",
-    "truncateFuncList": "truncateFuncList",
-    "truncate": "npm-run-all truncateInterfaces truncateFuncList tsc"
+    "clean": "rimraf lib",
+    "regenInterfaces": "regenInterfaces",
+    "regenModels": "regenModels",
+    "regenConsts": "regenConsts",
+    "truncate": "npm-run-all regenInterfaces regenModels regenConsts"
   },
   "repository": {
     "type": "git",
