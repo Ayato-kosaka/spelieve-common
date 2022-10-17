@@ -31,9 +31,9 @@ export class MPlace {
     rating: 'rating',
     popularTags: 'popularTags',
     averageStayTime: 'averageStayTime',
+    photoUrls: 'photoUrls',
     createdAt: 'createdAt',
     updatedAt: 'updatedAt',
-    photoUrls: 'photoUrls',
   }
 
   place_id: string;
@@ -70,20 +70,20 @@ export class MPlace {
 
   premise?: string;
 
-  formatted_phone_number: string;
+  formatted_phone_number?: string;
 
-  openingHours: SpelieveInterface.MPlaceOpeningHoursInterface[];
+  openingHours?: SpelieveInterface.MPlaceOpeningHoursInterface[];
 
-  rating: number;
+  rating?: number;
 
   popularTags: Array<string>;
 
   averageStayTime?: Timestamp;
 
+  photoUrls: Array<string>;
+
   createdAt: Timestamp;
 
   updatedAt: Timestamp;
-
-  photoUrls: Array<string>;
 
 }

@@ -24,12 +24,12 @@ export interface MPlaceOneInterface {
     sublocalityLevel3?: string;
     sublocalityLevel4?: string;
     premise?: string;
-    formatted_phone_number: string;
-    openingHours: SpelieveInterface.MPlaceOpeningHoursInterface[];
-    rating: number;
+    formatted_phone_number?: string;
+    openingHours?: SpelieveInterface.MPlaceOpeningHoursInterface[];
+    rating?: number;
     popularTags: Array<string>;
     averageStayTime?: Date;
+    photoUrls: Array<string>;
     createdAt: Date;
     updatedAt: Date;
-    photoUrls: Array<string>;
 } 
