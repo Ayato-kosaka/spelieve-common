@@ -34,7 +34,7 @@ export declare class MPlace {
     name: string;
     imageUrl: string;
     geometry: GeoPoint;
-    mapUrl: string;
+    mapUrl?: string;
     website?: string;
     formatted_address: string;
     country: string;

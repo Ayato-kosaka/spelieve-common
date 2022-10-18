@@ -46,7 +46,7 @@ export class MPlace {
 
   geometry: GeoPoint;
 
-  mapUrl: string;
+  mapUrl?: string;
 
   website?: string;
 
