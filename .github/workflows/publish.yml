@@ -22,13 +22,6 @@ jobs:
        with:
          node-version: 14.x
          registry-url: https://registry.npmjs.org
-        
-     # バージョンを更新
-     - name: update version
-       run: |
-        git config user.name github-actions[bot]
-        git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-        npm version patch
 
      # 必要なモジュールをインストール
      - name: install node_modules
@@ -51,12 +44,13 @@ jobs:
     # typescript をコンパイルし、lib に配置する
      - name: run tsc
        run: npm run tsc
-
-     # パッケージとして公開する
-     - name: publish
-       run: npx can-npm-publish --verbose && npm publish --access=public || echo "No need to publish"
-       env:
-         NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+        
+     # バージョンを更新
+     - name: update version
+       run: |
+        git config user.name github-actions[bot]
+        git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+        npm version patch
         
      # バージョン情報を環境変数として設定
      - name: set version to env
@@ -78,3 +72,9 @@ jobs:
         git add -A
         git commit -m "truncate ${VERSION}"
         git push origin main
+
+     # パッケージとして公開する
+     - name: publish
+       run: npx can-npm-publish --verbose && npm publish --access=public || echo "No need to publish"
+       env:
+         NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
