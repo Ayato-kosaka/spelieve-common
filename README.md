@@ -15,10 +15,10 @@ https://www.npmjs.com/package/spelieve-common
 `import { ${interfaceName} } from 'spelieve-common/lib/Interfaces/Place'`
 
 ## How to use spelieve Model in the source code
-import { MPlace } from ‘spelieve-common/lib/Models/Place/PDB01/MPlace’
+`import { MPlace } from 'spelieve-common/lib/Models/Place/PDB01/MPlace'`
 
 ### How to use model name
-MPlace.modelName => ‘MPlace’
+`MPlace.modelName => 'MPlace'`
 
 ### How to use column names
-MPlace.Cols.lang => 'lang'
+`MPlace.Cols.lang => 'lang'`
