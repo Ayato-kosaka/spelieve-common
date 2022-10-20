@@ -44,12 +44,19 @@ jobs:
     # typescript をコンパイルし、lib に配置する
      - name: run tsc
        run: npm run tsc
+ 
+     # プシュする
+     - name: push changes
+       run: |
+        git config user.name github-actions[bot]
+        git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+        git add -A
+        git commit -m "truncate ${VERSION}"
+        git push origin main
         
      # バージョンを更新
      - name: update version
        run: |
-        git config user.name github-actions[bot]
-        git config user.email 41898282+github-actions[bot]@users.noreply.github.com
         npm version patch
         
      # バージョン情報を環境変数として設定
@@ -65,13 +72,6 @@ jobs:
          github_repo: ${{ github.repository }}
          git_commit_sha: ${{ github.sha }}
          git_tag_prefix: "v"
- 
-     # プシュする
-     - name: push changes
-       run: |
-        git add -A
-        git commit -m "truncate ${VERSION}"
-        git push origin main
 
      # パッケージとして公開する
      - name: publish
