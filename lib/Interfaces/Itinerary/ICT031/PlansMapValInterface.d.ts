@@ -1,7 +1,8 @@
+import { QueryDocumentSnapshot } from '@firebase/firestore';
 import * as SpelieveInterface from '../../../Interfaces';
 export interface PlansMapValInterface {
-    plansMap: {
-        [id: string]: SpelieveInterface.PlansMapInterface;
+    plansDocSnapMap: {
+        [id: string]: QueryDocumentSnapshot<SpelieveInterface.PlansMapInterface>;
     };
     create: () => Promise<void>;
 }
