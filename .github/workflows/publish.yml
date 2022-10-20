@@ -1,4 +1,4 @@
-name: publish spelieve library
+name: Regenerate & publish spelieve library
 
 env:
  CI: true
@@ -10,7 +10,7 @@ on:
 
 jobs:
  publish:
-   name: Truncate
+   name: Regenerate & Publish
    runs-on: ubuntu-latest
    steps:
      - name: checkout
