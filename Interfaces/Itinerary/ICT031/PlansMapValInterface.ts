@@ -4,14 +4,9 @@ import { GooglePlaceData, GooglePlaceDetail } from 'react-native-google-places-a
 import * as SpelieveInterface from '../../../Interfaces';
 
 /**
- * Export interface of ItineraryOne object.
+ * Export interface of PlansMapVal object.
  */
-export interface ItineraryOneInterface {
-    title: string;
-    subTitle?: string;
-    imageUrl?: string;
-    startDate?: Date;
-    endDate?: Date;
-    tags?: Array<string>;
-    caption: string;
+export interface PlansMapValInterface {
+    plansMap: { [id: string]: SpelieveInterface.PlansMapInterface};
+    create: () => Promise<void>;
 } 

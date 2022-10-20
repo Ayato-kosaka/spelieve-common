@@ -1,4 +1,4 @@
-import { GeoPoint } from '@firebase/firestore-types';
+import { GeoPoint } from '@firebase/firestore';
 import * as SpelieveInterface from '../../../Interfaces';
 export interface MPlacesListInterface {
     place_id: string;

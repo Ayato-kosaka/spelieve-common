@@ -1,4 +1,4 @@
-import { Timestamp } from '@firebase/firestore-types';
+import { Timestamp } from '@firebase/firestore';
 export declare class PlanGroups {
     static modelName: string;
     static Cols: {

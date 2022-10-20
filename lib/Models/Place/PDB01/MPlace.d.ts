@@ -1,4 +1,4 @@
-import { GeoPoint, Timestamp } from '@firebase/firestore-types';
+import { GeoPoint, Timestamp } from '@firebase/firestore';
 import * as SpelieveInterface from '../../../Interfaces';
 export declare class MPlace {
     static modelName: string;

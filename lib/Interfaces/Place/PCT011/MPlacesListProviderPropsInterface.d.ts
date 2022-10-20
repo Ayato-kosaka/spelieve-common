@@ -1,4 +1,4 @@
-import { DocumentReference } from '@firebase/firestore-types';
+import { DocumentReference } from '@firebase/firestore';
 import { ReactNode } from 'react';
 export interface MPlacesListProviderPropsInterface {
     parentDocRef?: DocumentReference;

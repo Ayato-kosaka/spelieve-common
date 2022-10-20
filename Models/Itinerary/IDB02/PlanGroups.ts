@@ -1,4 +1,4 @@
-import { GeoPoint, Timestamp, DocumentReference } from '@firebase/firestore-types';
+import { GeoPoint, Timestamp, DocumentReference } from '@firebase/firestore';
 import * as SpelieveInterface from '../../../Interfaces';
 
 /**

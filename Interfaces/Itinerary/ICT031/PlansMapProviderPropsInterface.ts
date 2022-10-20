@@ -4,13 +4,9 @@ import { GooglePlaceData, GooglePlaceDetail } from 'react-native-google-places-a
 import * as SpelieveInterface from '../../../Interfaces';
 
 /**
- * Export interface of MPlacesListProviderProps object.
+ * Export interface of PlansMapProviderProps object.
  */
-export interface MPlacesListProviderPropsInterface {
+export interface PlansMapProviderPropsInterface {
     parentDocRef?: DocumentReference;
     children: ReactNode;
-    initialCountry: string;
-    initialAdministrativeAreaLevel1: string;
-    initialAdministrativeAreaLevel2: string;
-    initialLocality: string;
 } 

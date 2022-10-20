@@ -1,4 +1,4 @@
-import { Timestamp, DocumentReference } from '@firebase/firestore-types';
+import { Timestamp, DocumentReference } from '@firebase/firestore';
 export declare class Plans {
     static modelName: string;
     static Cols: {
