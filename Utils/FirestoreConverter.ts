@@ -1,18 +1,13 @@
 import { FirestoreDataConverter, QueryDocumentSnapshot, SnapshotOptions, Timestamp } from '@firebase/firestore';
 
 /**
- * Export a FirestoreDataConverter to transform ICT011ItineraryOne into Firestore data.
+ * Export a FirestoreDataConverter to transform custom Type T into Firestore data.
  */
 export const FirestoreConverter = <T, model>(
-	toModel: (data: T) => model,
 	model: { fromJSON(data): model },
 	fromModel: (data: model) => T,
+	toModel: (data: T) => model,
 ): FirestoreDataConverter<T> => ({
-	/**
-	 * Convert custom Type T before be saved to Firestore.
-	 */
-	toFirestore: (data: T): model => toModel(data),
-
 	/**
 	 * Convert data from Firestore to match custom Type T.
 	 */
@@ -23,7 +18,11 @@ export const FirestoreConverter = <T, model>(
 				json[key] = (json[key] as Timestamp).toDate();
 			}
 		});
-
 		return fromModel(model.fromJSON(json));
 	},
+
+	/**
+	 * Convert custom Type T before be saved to Firestore.
+	 */
+	toFirestore: (data: T): model => toModel(data),
 });
