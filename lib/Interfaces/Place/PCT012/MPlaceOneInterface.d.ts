@@ -1,5 +1,5 @@
-import { GeoPoint } from '@firebase/firestore';
-import * as SpelieveInterface from '../../../Interfaces';
+import { GeoPoint } from "@firebase/firestore";
+import * as SpelieveInterface from "../../../Interfaces";
 export interface MPlaceOneInterface {
     place_id: string;
     language: string;

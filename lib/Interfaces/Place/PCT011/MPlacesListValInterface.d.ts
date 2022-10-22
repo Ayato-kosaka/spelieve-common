@@ -1,4 +1,4 @@
-import * as SpelieveInterface from '../../../Interfaces';
+import * as SpelieveInterface from "../../../Interfaces";
 export interface MPlacesListValInterface {
     placesList: Array<SpelieveInterface.MPlacesListInterface>;
     setCountry: (country: string) => void;

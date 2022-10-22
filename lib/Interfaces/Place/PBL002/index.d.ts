@@ -1,1 +1,1 @@
-export * from './UpsertPlaceDataBodyInterface';
+export * from "./UpsertPlaceDataBodyInterface";

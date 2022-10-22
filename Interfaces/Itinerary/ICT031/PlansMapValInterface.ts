@@ -1,12 +1,15 @@
-import { GeoPoint, Timestamp, DocumentReference, DocumentSnapshot, QuerySnapshot, QueryDocumentSnapshot } from '@firebase/firestore';
-import React, { ReactNode } from 'react';
-import { GooglePlaceData, GooglePlaceDetail } from 'react-native-google-places-autocomplete';
-import * as SpelieveInterface from '../../../Interfaces';
+import { DocumentReference, QueryDocumentSnapshot } from "@firebase/firestore";
+
+import * as SpelieveInterface from "../../../Interfaces";
 
 /**
  * Export interface of PlansMapVal object.
  */
 export interface PlansMapValInterface {
-    plansDocSnapMap: {[id:string]: QueryDocumentSnapshot<SpelieveInterface.PlansMapInterface>};
-    plansCRef: () => Promise<DocumentReference<SpelieveInterface.PlansMapInterface>>;
-} 
+  plansDocSnapMap: {
+    [id: string]: QueryDocumentSnapshot<SpelieveInterface.PlansMapInterface>;
+  };
+  plansCRef: () => Promise<
+    DocumentReference<SpelieveInterface.PlansMapInterface>
+  >;
+}

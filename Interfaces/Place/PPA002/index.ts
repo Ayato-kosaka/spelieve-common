@@ -1,1 +1,1 @@
-export * from './PlaceControllerInterface';
+export * from "./PlaceControllerInterface";

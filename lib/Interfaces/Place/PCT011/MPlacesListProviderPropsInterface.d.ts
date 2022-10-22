@@ -1,5 +1,5 @@
-import { DocumentReference } from '@firebase/firestore';
-import { ReactNode } from 'react';
+import { DocumentReference } from "@firebase/firestore";
+import { ReactNode } from "react";
 export interface MPlacesListProviderPropsInterface {
     parentDocRef?: DocumentReference;
     children: ReactNode;

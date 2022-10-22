@@ -1,23 +1,20 @@
-import { GeoPoint, Timestamp, DocumentReference } from '@firebase/firestore';
-import * as SpelieveInterface from '../../../Interfaces';
+import { Timestamp } from "@firebase/firestore";
 
 /**
  * Export IDB02PlanGroups model class.
  */
 export class PlanGroups {
+  static modelName = "PlanGroups";
 
-  static modelName = 'PlanGroups';
-
-  static Cols  = {
-    plans: 'plans',
-    representativePlanID: 'representativePlanID',
-    representativeStartTime: 'representativeStartTime',
-  }
+  static Cols = {
+    plans: "plans",
+    representativePlanID: "representativePlanID",
+    representativeStartTime: "representativeStartTime",
+  };
 
   plans: Array<string>;
 
   representativePlanID: string;
 
   representativeStartTime: Timestamp;
-
 }
