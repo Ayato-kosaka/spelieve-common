@@ -5,7 +5,7 @@
   "scripts": {
     "tsc": "tsc",
     "clean": "rimraf lib",
-    "format": "prettier --write \"**/*.ts\" && eslint \"**/*.ts\" --fix",
+    "format": "prettier --write \"**/*.ts\" \"!lib\" && eslint \"**/*.ts\" --fix",
     "regenInterfaces": "regenInterfaces",
     "regenModels": "regenModels",
     "regenConsts": "regenConsts",
