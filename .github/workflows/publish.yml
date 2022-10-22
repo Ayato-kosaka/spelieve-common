@@ -41,8 +41,8 @@ jobs:
          PG_DATA_ENDPOINT: ${{ secrets.PG_DATA_ENDPOINT }}
 
      # Eslint Prettier を実行
-     # - name: build
-       # run: npx tsc
+     - name: format with Eslint & Prettier
+       run: npm run format
 
     # lib を削除する
      - name: run clean
