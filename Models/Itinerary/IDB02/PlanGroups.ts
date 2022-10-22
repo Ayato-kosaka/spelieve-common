@@ -1,4 +1,4 @@
-import * as DateUtils from 'Utils/DateUtils';
+import * as DateUtils from '../../../Utils/DateUtils';
 
 /**
  * Export IDB02PlanGroups model class.

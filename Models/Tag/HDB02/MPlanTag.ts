@@ -1,4 +1,4 @@
-import * as DateUtils from 'Utils/DateUtils';
+import * as DateUtils from '../../../Utils/DateUtils';
 
 /**
  * Export HDB02MPlanTag model class.

@@ -1,5 +1,6 @@
 import { DocumentReference } from '@firebase/firestore';
-import * as DateUtils from 'Utils/DateUtils';
+
+import * as DateUtils from '../../../Utils/DateUtils';
 
 /**
  * Export IDB03Plans model class.

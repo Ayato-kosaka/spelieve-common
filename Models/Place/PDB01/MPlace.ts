@@ -1,6 +1,7 @@
 import { GeoPoint } from '@firebase/firestore';
-import * as SpelieveInterface from 'Interfaces';
-import * as DateUtils from 'Utils/DateUtils';
+
+import * as SpelieveInterface from '../../../Interfaces';
+import * as DateUtils from '../../../Utils/DateUtils';
 
 /**
  * Export PDB01MPlace model class.
