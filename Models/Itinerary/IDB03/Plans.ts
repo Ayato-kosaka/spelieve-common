@@ -1,44 +1,44 @@
-import { Timestamp, DocumentReference } from "@firebase/firestore";
+import { Timestamp, DocumentReference } from '@firebase/firestore';
 
 /**
  * Export IDB03Plans model class.
  */
 export class Plans {
-  static modelName = "Plans";
+	static modelName = 'Plans';
 
-  static Cols = {
-    placeReference: "placeReference",
-    placeSpan: "placeSpan",
-    placeStartTime: "placeStartTime",
-    placeEndTime: "placeEndTime",
-    tags: "tags",
-    imageUrl: "imageUrl",
-    memo: "memo",
-    transportationMode: "transportationMode",
-    transportationDepartureTime: "transportationDepartureTime",
-    transportationArrivalTime: "transportationArrivalTime",
-    transportationSpan: "transportationSpan",
-  };
+	static Cols = {
+		placeReference: 'placeReference',
+		placeSpan: 'placeSpan',
+		placeStartTime: 'placeStartTime',
+		placeEndTime: 'placeEndTime',
+		tags: 'tags',
+		imageUrl: 'imageUrl',
+		memo: 'memo',
+		transportationMode: 'transportationMode',
+		transportationDepartureTime: 'transportationDepartureTime',
+		transportationArrivalTime: 'transportationArrivalTime',
+		transportationSpan: 'transportationSpan',
+	};
 
-  placeReference?: DocumentReference;
+	placeReference?: DocumentReference;
 
-  placeSpan: Timestamp;
+	placeSpan: Timestamp;
 
-  placeStartTime: Timestamp;
+	placeStartTime: Timestamp;
 
-  placeEndTime: Timestamp;
+	placeEndTime: Timestamp;
 
-  tags?: Array<string>;
+	tags?: Array<string>;
 
-  imageUrl: string;
+	imageUrl: string;
 
-  memo?: string;
+	memo?: string;
 
-  transportationMode?: string;
+	transportationMode?: string;
 
-  transportationDepartureTime?: Timestamp;
+	transportationDepartureTime?: Timestamp;
 
-  transportationArrivalTime?: Timestamp;
+	transportationArrivalTime?: Timestamp;
 
-  transportationSpan: Timestamp;
+	transportationSpan: Timestamp;
 }

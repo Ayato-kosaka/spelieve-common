@@ -1,17 +1,17 @@
-import { Timestamp } from "@firebase/firestore";
+import { Timestamp } from '@firebase/firestore';
 
 /**
  * Export HDB02MPlanTag model class.
  */
 export class MPlanTag {
-  static modelName = "MPlanTag";
+	static modelName = 'MPlanTag';
 
-  static Cols = {
-    attachedCount: "attachedCount",
-    stayTime: "stayTime",
-  };
+	static Cols = {
+		attachedCount: 'attachedCount',
+		stayTime: 'stayTime',
+	};
 
-  attachedCount: number;
+	attachedCount: number;
 
-  stayTime: Timestamp;
+	stayTime: Timestamp;
 }

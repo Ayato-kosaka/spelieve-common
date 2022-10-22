@@ -1,88 +1,88 @@
-import { GeoPoint, Timestamp } from "@firebase/firestore";
+import { GeoPoint, Timestamp } from '@firebase/firestore';
 
-import * as SpelieveInterface from "../../../Interfaces";
+import * as SpelieveInterface from '../../../Interfaces';
 
 /**
  * Export PDB01MPlace model class.
  */
 export class MPlace {
-  static modelName = "MPlace";
+	static modelName = 'MPlace';
 
-  static Cols = {
-    place_id: "place_id",
-    language: "language",
-    name: "name",
-    imageUrl: "imageUrl",
-    geometry: "geometry",
-    mapUrl: "mapUrl",
-    website: "website",
-    formatted_address: "formatted_address",
-    country: "country",
-    administrativeAreaLevel1: "administrativeAreaLevel1",
-    administrativeAreaLevel2: "administrativeAreaLevel2",
-    locality: "locality",
-    sublocalityLevel1: "sublocalityLevel1",
-    sublocalityLevel2: "sublocalityLevel2",
-    sublocalityLevel3: "sublocalityLevel3",
-    sublocalityLevel4: "sublocalityLevel4",
-    premise: "premise",
-    formatted_phone_number: "formatted_phone_number",
-    openingHours: "openingHours",
-    rating: "rating",
-    popularTags: "popularTags",
-    averageStayTime: "averageStayTime",
-    photoUrls: "photoUrls",
-    createdAt: "createdAt",
-    updatedAt: "updatedAt",
-  };
+	static Cols = {
+		place_id: 'place_id',
+		language: 'language',
+		name: 'name',
+		imageUrl: 'imageUrl',
+		geometry: 'geometry',
+		mapUrl: 'mapUrl',
+		website: 'website',
+		formatted_address: 'formatted_address',
+		country: 'country',
+		administrativeAreaLevel1: 'administrativeAreaLevel1',
+		administrativeAreaLevel2: 'administrativeAreaLevel2',
+		locality: 'locality',
+		sublocalityLevel1: 'sublocalityLevel1',
+		sublocalityLevel2: 'sublocalityLevel2',
+		sublocalityLevel3: 'sublocalityLevel3',
+		sublocalityLevel4: 'sublocalityLevel4',
+		premise: 'premise',
+		formatted_phone_number: 'formatted_phone_number',
+		openingHours: 'openingHours',
+		rating: 'rating',
+		popularTags: 'popularTags',
+		averageStayTime: 'averageStayTime',
+		photoUrls: 'photoUrls',
+		createdAt: 'createdAt',
+		updatedAt: 'updatedAt',
+	};
 
-  place_id: string;
+	place_id: string;
 
-  language: string;
+	language: string;
 
-  name: string;
+	name: string;
 
-  imageUrl: string;
+	imageUrl: string;
 
-  geometry: GeoPoint;
+	geometry: GeoPoint;
 
-  mapUrl?: string;
+	mapUrl?: string;
 
-  website?: string;
+	website?: string;
 
-  formatted_address: string;
+	formatted_address: string;
 
-  country: string;
+	country: string;
 
-  administrativeAreaLevel1?: string;
+	administrativeAreaLevel1?: string;
 
-  administrativeAreaLevel2?: string;
+	administrativeAreaLevel2?: string;
 
-  locality?: string;
+	locality?: string;
 
-  sublocalityLevel1?: string;
+	sublocalityLevel1?: string;
 
-  sublocalityLevel2?: string;
+	sublocalityLevel2?: string;
 
-  sublocalityLevel3?: string;
+	sublocalityLevel3?: string;
 
-  sublocalityLevel4?: string;
+	sublocalityLevel4?: string;
 
-  premise?: string;
+	premise?: string;
 
-  formatted_phone_number?: string;
+	formatted_phone_number?: string;
 
-  openingHours?: SpelieveInterface.MPlaceOpeningHoursInterface[];
+	openingHours?: SpelieveInterface.MPlaceOpeningHoursInterface[];
 
-  rating?: number;
+	rating?: number;
 
-  popularTags: Array<string>;
+	popularTags: Array<string>;
 
-  averageStayTime?: Timestamp;
+	averageStayTime?: Timestamp;
 
-  photoUrls: Array<string>;
+	photoUrls: Array<string>;
 
-  createdAt: Timestamp;
+	createdAt: Timestamp;
 
-  updatedAt: Timestamp;
+	updatedAt: Timestamp;
 }

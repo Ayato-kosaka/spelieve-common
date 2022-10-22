@@ -1,2 +1,2 @@
-export * from "./PlaceListPropsInterface";
-export * from "./PlaceListControllerInterface";
+export * from './PlaceListPropsInterface';
+export * from './PlaceListControllerInterface';

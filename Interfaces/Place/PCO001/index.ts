@@ -1,2 +1,2 @@
-export * from "./SearchPlacePropsInterface";
-export * from "./SearchPlaceControllerInterface";
+export * from './SearchPlacePropsInterface';
+export * from './SearchPlaceControllerInterface';

@@ -1,32 +1,32 @@
-import { Timestamp } from "@firebase/firestore";
+import { Timestamp } from '@firebase/firestore';
 
 /**
  * Export IDB01Itineraries model class.
  */
 export class Itineraries {
-  static modelName = "Itineraries";
+	static modelName = 'Itineraries';
 
-  static Cols = {
-    title: "title",
-    subTitle: "subTitle",
-    imageUrl: "imageUrl",
-    startDate: "startDate",
-    endDate: "endDate",
-    tags: "tags",
-    caption: "caption",
-  };
+	static Cols = {
+		title: 'title',
+		subTitle: 'subTitle',
+		imageUrl: 'imageUrl',
+		startDate: 'startDate',
+		endDate: 'endDate',
+		tags: 'tags',
+		caption: 'caption',
+	};
 
-  title: string;
+	title: string;
 
-  subTitle?: string;
+	subTitle?: string;
 
-  imageUrl?: string;
+	imageUrl?: string;
 
-  startDate?: Timestamp;
+	startDate?: Timestamp;
 
-  endDate?: Timestamp;
+	endDate?: Timestamp;
 
-  tags?: Array<string>;
+	tags?: Array<string>;
 
-  caption: string;
+	caption: string;
 }

@@ -1,4 +1,4 @@
-import { DocumentReference } from "@firebase/firestore";
+import { DocumentReference } from '@firebase/firestore';
 export interface PlansMapInterface {
     placeReference?: DocumentReference;
     placeSpan: Date;

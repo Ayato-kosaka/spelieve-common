@@ -1,1 +1,1 @@
-export * from "./MPlaceOneInterface";
+export * from './MPlaceOneInterface';
