@@ -3,7 +3,7 @@ import { FirestoreDataConverter, QueryDocumentSnapshot, SnapshotOptions, Timesta
 /**
  * Export a FirestoreDataConverter to transform custom Type T into Firestore data.
  */
-export const FirestoreConverter = <T, model>(
+export const FirestoreConverter = <model, T>(
 	model: { fromJSON(data): model },
 	fromModel: (data: model) => T,
 	toModel: (data: T) => model,
