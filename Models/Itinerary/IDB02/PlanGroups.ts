@@ -1,4 +1,4 @@
-import { Timestamp } from '@firebase/firestore';
+import * as DateUtils from 'Utils/DateUtils';
 
 /**
  * Export IDB02PlanGroups model class.
@@ -12,9 +12,18 @@ export class PlanGroups {
 		representativeStartTime: 'representativeStartTime',
 	};
 
+	static fromJSON(json: any): PlanGroups {
+		const ret = new PlanGroups();
+		ret.plans = json.plans instanceof Array ? json.plans : [];
+		ret.representativePlanID = typeof json.representativePlanID === 'string' ? json.representativePlanID : '';
+		ret.representativeStartTime =
+			json.representativeStartTime instanceof Date ? json.representativeStartTime : DateUtils.initialDate();
+		return ret;
+	}
+
 	plans: Array<string>;
 
 	representativePlanID: string;
 
-	representativeStartTime: Timestamp;
+	representativeStartTime: Date;
 }

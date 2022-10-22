@@ -8,5 +8,11 @@ export class MItineraryHashtag {
 		attachedCount: 'attachedCount',
 	};
 
+	static fromJSON(json: any): MItineraryHashtag {
+		const ret = new MItineraryHashtag();
+		ret.attachedCount = typeof json.attachedCount === 'number' ? json.attachedCount : 0;
+		return ret;
+	}
+
 	attachedCount: number;
 }

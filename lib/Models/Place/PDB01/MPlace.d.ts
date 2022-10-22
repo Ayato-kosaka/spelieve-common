@@ -1,5 +1,5 @@
-import { GeoPoint, Timestamp } from '@firebase/firestore';
-import * as SpelieveInterface from '../../../Interfaces';
+import { GeoPoint } from '@firebase/firestore';
+import * as SpelieveInterface from 'Interfaces';
 export declare class MPlace {
     static modelName: string;
     static Cols: {
@@ -29,6 +29,7 @@ export declare class MPlace {
         createdAt: string;
         updatedAt: string;
     };
+    static fromJSON(json: any): MPlace;
     place_id: string;
     language: string;
     name: string;
@@ -50,8 +51,8 @@ export declare class MPlace {
     openingHours?: SpelieveInterface.MPlaceOpeningHoursInterface[];
     rating?: number;
     popularTags: Array<string>;
-    averageStayTime?: Timestamp;
+    averageStayTime?: Date;
     photoUrls: Array<string>;
-    createdAt: Timestamp;
-    updatedAt: Timestamp;
+    createdAt: Date;
+    updatedAt: Date;
 }

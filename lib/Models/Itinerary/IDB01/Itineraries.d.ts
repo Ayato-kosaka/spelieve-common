@@ -1,4 +1,3 @@
-import { Timestamp } from '@firebase/firestore';
 export declare class Itineraries {
     static modelName: string;
     static Cols: {
@@ -10,11 +9,12 @@ export declare class Itineraries {
         tags: string;
         caption: string;
     };
+    static fromJSON(json: any): Itineraries;
     title: string;
     subTitle?: string;
     imageUrl?: string;
-    startDate?: Timestamp;
-    endDate?: Timestamp;
+    startDate?: Date;
+    endDate?: Date;
     tags?: Array<string>;
     caption: string;
 }

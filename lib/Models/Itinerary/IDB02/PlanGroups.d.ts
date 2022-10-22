@@ -1,4 +1,3 @@
-import { Timestamp } from '@firebase/firestore';
 export declare class PlanGroups {
     static modelName: string;
     static Cols: {
@@ -6,7 +5,8 @@ export declare class PlanGroups {
         representativePlanID: string;
         representativeStartTime: string;
     };
+    static fromJSON(json: any): PlanGroups;
     plans: Array<string>;
     representativePlanID: string;
-    representativeStartTime: Timestamp;
+    representativeStartTime: Date;
 }

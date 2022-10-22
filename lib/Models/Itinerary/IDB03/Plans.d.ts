@@ -1,4 +1,4 @@
-import { Timestamp, DocumentReference } from '@firebase/firestore';
+import { DocumentReference } from '@firebase/firestore';
 export declare class Plans {
     static modelName: string;
     static Cols: {
@@ -14,15 +14,16 @@ export declare class Plans {
         transportationArrivalTime: string;
         transportationSpan: string;
     };
+    static fromJSON(json: any): Plans;
     placeReference?: DocumentReference;
-    placeSpan: Timestamp;
-    placeStartTime: Timestamp;
-    placeEndTime: Timestamp;
+    placeSpan: Date;
+    placeStartTime: Date;
+    placeEndTime: Date;
     tags?: Array<string>;
     imageUrl: string;
     memo?: string;
     transportationMode?: string;
-    transportationDepartureTime?: Timestamp;
-    transportationArrivalTime?: Timestamp;
-    transportationSpan: Timestamp;
+    transportationDepartureTime?: Date;
+    transportationArrivalTime?: Date;
+    transportationSpan: Date;
 }
