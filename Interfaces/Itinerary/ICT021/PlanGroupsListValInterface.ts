@@ -1,4 +1,4 @@
-import { QuerySnapshot } from '@firebase/firestore';
+import { QuerySnapshot, CollectionReference } from '@firebase/firestore';
 
 import * as SpelieveInterface from '../../../Interfaces';
 
@@ -7,5 +7,5 @@ import * as SpelieveInterface from '../../../Interfaces';
  */
 export interface PlanGroupsListValInterface {
 	planGroupsQSnap: QuerySnapshot<SpelieveInterface.PlanGroupsListInterface>;
-	planGroupsCRef: (representativeStartTime?: Date) => Promise<void>;
+	planGroupsCRef: CollectionReference<SpelieveInterface.PlanGroupsListInterface>;
 }
