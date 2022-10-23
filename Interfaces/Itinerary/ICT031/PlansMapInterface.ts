@@ -1,10 +1,8 @@
-import { DocumentReference } from '@firebase/firestore';
-
 /**
  * Export interface of PlansMap object.
  */
 export interface PlansMapInterface {
-	placeReference?: DocumentReference;
+	place_id: string;
 	placeSpan: Date;
 	placeStartTime: Date;
 	placeEndTime: Date;

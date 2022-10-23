@@ -1,8 +1,7 @@
-import { DocumentReference } from '@firebase/firestore';
 export declare class Plans {
     static modelName: string;
     static Cols: {
-        placeReference: string;
+        place_id: string;
         placeSpan: string;
         placeStartTime: string;
         placeEndTime: string;
@@ -15,7 +14,7 @@ export declare class Plans {
         transportationSpan: string;
     };
     static fromJSON(json: any): Plans;
-    placeReference?: DocumentReference;
+    place_id: string;
     placeSpan: Date;
     placeStartTime: Date;
     placeEndTime: Date;

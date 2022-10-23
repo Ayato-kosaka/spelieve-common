@@ -5,7 +5,6 @@ import { ReactNode } from 'react';
  * Export interface of ItineraryOneProviderProps object.
  */
 export interface ItineraryOneProviderPropsInterface {
-	parentDocRef?: DocumentReference;
+	docRef: DocumentReference;
 	children: ReactNode;
-	id: string;
 }
