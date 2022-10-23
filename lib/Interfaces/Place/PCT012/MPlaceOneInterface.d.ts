@@ -1,11 +1,10 @@
-import { GeoPoint } from '@firebase/firestore';
 import * as SpelieveInterface from '../../../Interfaces';
 export interface MPlaceOneInterface {
     place_id: string;
     language: string;
     name: string;
     imageUrl: string;
-    geometry: GeoPoint;
+    geometry: SpelieveInterface.MPlaceGeoPointInterface;
     mapUrl?: string;
     website?: string;
     formatted_address: string;

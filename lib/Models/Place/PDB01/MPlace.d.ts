@@ -1,4 +1,3 @@
-import { GeoPoint } from '@firebase/firestore';
 import * as SpelieveInterface from '../../../Interfaces';
 export declare class MPlace {
     static modelName: string;
@@ -34,7 +33,7 @@ export declare class MPlace {
     language: string;
     name: string;
     imageUrl: string;
-    geometry: GeoPoint;
+    geometry: SpelieveInterface.MPlaceGeoPointInterface;
     mapUrl?: string;
     website?: string;
     formatted_address: string;

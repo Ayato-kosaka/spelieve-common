@@ -1,5 +1,3 @@
-import { GeoPoint } from '@firebase/firestore';
-
 import * as SpelieveInterface from '../../../Interfaces';
 import * as DateUtils from '../../../Utils/DateUtils';
 
@@ -43,7 +41,7 @@ export class MPlace {
 		ret.language = typeof json.language === 'string' ? json.language : '';
 		ret.name = typeof json.name === 'string' ? json.name : '';
 		ret.imageUrl = typeof json.imageUrl === 'string' ? json.imageUrl : '';
-		ret.geometry = json.geometry instanceof GeoPoint ? json.geometry : new GeoPoint(0, 0);
+		ret.geometry = json.geometry instanceof Object ? json.geometry : {};
 		ret.mapUrl = typeof json.mapUrl === 'string' ? json.mapUrl : undefined;
 		ret.website = typeof json.website === 'string' ? json.website : undefined;
 		ret.formatted_address = typeof json.formatted_address === 'string' ? json.formatted_address : '';
@@ -78,7 +76,7 @@ export class MPlace {
 
 	imageUrl: string;
 
-	geometry: GeoPoint;
+	geometry: SpelieveInterface.MPlaceGeoPointInterface;
 
 	mapUrl?: string;
 
