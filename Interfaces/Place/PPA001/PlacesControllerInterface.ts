@@ -4,6 +4,6 @@ import { GooglePlaceData, GooglePlaceDetail } from 'react-native-google-places-a
  * Export interface of PlacesController object.
  */
 export interface PlacesControllerInterface {
-	onAutoCompleteClicked: (data: GooglePlaceData, details: GooglePlaceDetail) => void;
+	onAutoCompleteClicked: (data: GooglePlaceData, detail: GooglePlaceDetail | null) => void;
 	onPlaceSelected: () => void;
 }

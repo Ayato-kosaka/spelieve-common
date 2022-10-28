@@ -4,6 +4,6 @@ import { GooglePlaceData, GooglePlaceDetail } from 'react-native-google-places-a
  * Export interface of SearchPlaceProps object.
  */
 export interface SearchPlacePropsInterface {
-	onAutoCompleteClicked: (data: GooglePlaceData, details: GooglePlaceDetail) => void;
+	onAutoCompleteClicked: (data: GooglePlaceData, detail: GooglePlaceDetail | null) => void;
 	hideDistinct?: boolean;
 }
