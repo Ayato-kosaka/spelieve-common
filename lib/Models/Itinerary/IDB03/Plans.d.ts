@@ -20,7 +20,7 @@ export declare class Plans {
     placeSpan: Date;
     placeStartTime: Date;
     placeEndTime: Date;
-    tags?: Array<string>;
+    tags: Array<string>;
     imageUrl: string;
     memo?: string;
     transportationMode?: string;

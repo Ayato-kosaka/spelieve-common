@@ -3,7 +3,7 @@ export interface PlansMapInterface {
     placeSpan: Date;
     placeStartTime: Date;
     placeEndTime: Date;
-    tags?: Array<string>;
+    tags: Array<string>;
     imageUrl: string;
     memo?: string;
     transportationMode?: string;

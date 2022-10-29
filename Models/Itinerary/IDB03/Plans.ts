@@ -28,7 +28,7 @@ export class Plans {
 		ret.placeSpan = json.placeSpan instanceof Date ? json.placeSpan : DateUtils.initialDate();
 		ret.placeStartTime = json.placeStartTime instanceof Date ? json.placeStartTime : DateUtils.initialDate();
 		ret.placeEndTime = json.placeEndTime instanceof Date ? json.placeEndTime : DateUtils.initialDate();
-		ret.tags = json.tags instanceof Array ? json.tags : undefined;
+		ret.tags = json.tags instanceof Array ? json.tags : [];
 		ret.imageUrl = typeof json.imageUrl === 'string' ? json.imageUrl : '';
 		ret.memo = typeof json.memo === 'string' ? json.memo : undefined;
 		ret.transportationMode = typeof json.transportationMode === 'string' ? json.transportationMode : undefined;
@@ -51,7 +51,7 @@ export class Plans {
 
 	placeEndTime: Date;
 
-	tags?: Array<string>;
+	tags: Array<string>;
 
 	imageUrl: string;
 

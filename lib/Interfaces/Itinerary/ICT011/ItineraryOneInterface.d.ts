@@ -4,7 +4,7 @@ export interface ItineraryOneInterface {
     imageUrl?: string;
     startDate?: Date;
     endDate?: Date;
-    tags?: Array<string>;
+    tags: Array<string>;
     caption: string;
     createdAt: Date;
     updatedAt: Date;

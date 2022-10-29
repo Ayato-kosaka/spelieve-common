@@ -25,7 +25,7 @@ export class Itineraries {
 		ret.imageUrl = typeof json.imageUrl === 'string' ? json.imageUrl : undefined;
 		ret.startDate = json.startDate instanceof Date ? json.startDate : undefined;
 		ret.endDate = json.endDate instanceof Date ? json.endDate : undefined;
-		ret.tags = json.tags instanceof Array ? json.tags : undefined;
+		ret.tags = json.tags instanceof Array ? json.tags : [];
 		ret.caption = typeof json.caption === 'string' ? json.caption : '';
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
@@ -42,7 +42,7 @@ export class Itineraries {
 
 	endDate?: Date;
 
-	tags?: Array<string>;
+	tags: Array<string>;
 
 	caption: string;
 
