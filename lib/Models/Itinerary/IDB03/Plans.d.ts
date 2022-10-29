@@ -12,6 +12,8 @@ export declare class Plans {
         transportationDepartureTime: string;
         transportationArrivalTime: string;
         transportationSpan: string;
+        createdAt: string;
+        updatedAt: string;
     };
     static fromJSON(json: any): Plans;
     place_id: string;
@@ -25,4 +27,6 @@ export declare class Plans {
     transportationDepartureTime?: Date;
     transportationArrivalTime?: Date;
     transportationSpan: Date;
+    createdAt: Date;
+    updatedAt: Date;
 }

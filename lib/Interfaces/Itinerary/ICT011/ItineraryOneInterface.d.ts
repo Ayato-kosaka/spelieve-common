@@ -6,4 +6,6 @@ export interface ItineraryOneInterface {
     endDate?: Date;
     tags?: Array<string>;
     caption: string;
+    createdAt: Date;
+    updatedAt: Date;
 }

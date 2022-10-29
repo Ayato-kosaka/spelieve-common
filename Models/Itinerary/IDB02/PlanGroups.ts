@@ -10,6 +10,8 @@ export class PlanGroups {
 		plans: 'plans',
 		representativePlanID: 'representativePlanID',
 		representativeStartTime: 'representativeStartTime',
+		createdAt: 'createdAt',
+		updatedAt: 'updatedAt',
 	};
 
 	static fromJSON(json: any): PlanGroups {
@@ -18,6 +20,8 @@ export class PlanGroups {
 		ret.representativePlanID = typeof json.representativePlanID === 'string' ? json.representativePlanID : '';
 		ret.representativeStartTime =
 			json.representativeStartTime instanceof Date ? json.representativeStartTime : DateUtils.initialDate();
+		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
+		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
 		return ret;
 	}
 
@@ -26,4 +30,8 @@ export class PlanGroups {
 	representativePlanID: string;
 
 	representativeStartTime: Date;
+
+	createdAt: Date;
+
+	updatedAt: Date;
 }

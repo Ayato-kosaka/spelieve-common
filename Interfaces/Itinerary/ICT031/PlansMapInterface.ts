@@ -13,4 +13,6 @@ export interface PlansMapInterface {
 	transportationDepartureTime?: Date;
 	transportationArrivalTime?: Date;
 	transportationSpan: Date;
+	createdAt: Date;
+	updatedAt: Date;
 }

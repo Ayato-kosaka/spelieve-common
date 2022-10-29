@@ -1,3 +1,5 @@
+import * as DateUtils from '../../../Utils/DateUtils';
+
 /**
  * Export IDB01Itineraries model class.
  */
@@ -12,6 +14,8 @@ export class Itineraries {
 		endDate: 'endDate',
 		tags: 'tags',
 		caption: 'caption',
+		createdAt: 'createdAt',
+		updatedAt: 'updatedAt',
 	};
 
 	static fromJSON(json: any): Itineraries {
@@ -23,6 +27,8 @@ export class Itineraries {
 		ret.endDate = json.endDate instanceof Date ? json.endDate : undefined;
 		ret.tags = json.tags instanceof Array ? json.tags : undefined;
 		ret.caption = typeof json.caption === 'string' ? json.caption : '';
+		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
+		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
 		return ret;
 	}
 
@@ -39,4 +45,8 @@ export class Itineraries {
 	tags?: Array<string>;
 
 	caption: string;
+
+	createdAt: Date;
+
+	updatedAt: Date;
 }

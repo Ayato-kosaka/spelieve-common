@@ -18,6 +18,8 @@ export class Plans {
 		transportationDepartureTime: 'transportationDepartureTime',
 		transportationArrivalTime: 'transportationArrivalTime',
 		transportationSpan: 'transportationSpan',
+		createdAt: 'createdAt',
+		updatedAt: 'updatedAt',
 	};
 
 	static fromJSON(json: any): Plans {
@@ -36,6 +38,8 @@ export class Plans {
 			json.transportationArrivalTime instanceof Date ? json.transportationArrivalTime : undefined;
 		ret.transportationSpan =
 			json.transportationSpan instanceof Date ? json.transportationSpan : DateUtils.initialDate();
+		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
+		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
 		return ret;
 	}
 
@@ -60,4 +64,8 @@ export class Plans {
 	transportationArrivalTime?: Date;
 
 	transportationSpan: Date;
+
+	createdAt: Date;
+
+	updatedAt: Date;
 }
