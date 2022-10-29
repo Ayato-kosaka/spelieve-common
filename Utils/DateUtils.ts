@@ -8,3 +8,6 @@ export const formatDateToTime = (date: Date, hourUnit = ':', minUnit = '') => {
 		return hour + hourUnit + (parseInt(min) != 0 || !minUnit ? min : '');
 	}
 };
+export const formatToHHMM = (date: Date): String => {
+  return `${date.getHours().toString().padStart( 2, '0')}:${date.getMinutes().toString().padStart( 2, '0')}`
+}
