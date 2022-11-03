@@ -1,1 +1,2 @@
-export * from './ItineraryEditpropsInterface';
+export * from './ItineraryEditPropsInterface';
+export * from './ItineraryEditControllerInterface';

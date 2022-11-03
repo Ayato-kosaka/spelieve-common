@@ -1,1 +1,2 @@
-export * from './PlanEditpropsInterface';
+export * from './EditPlanPropsInterface';
+export * from './EditPlanControllerInterface';

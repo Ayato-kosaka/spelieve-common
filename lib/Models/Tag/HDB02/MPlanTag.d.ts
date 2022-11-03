@@ -3,8 +3,10 @@ export declare class MPlanTag {
     static Cols: {
         attachedCount: string;
         stayTime: string;
+        createdAt: string;
     };
     static fromJSON(json: any): MPlanTag;
     attachedCount: number;
     stayTime: Date;
+    createdAt: Date;
 }

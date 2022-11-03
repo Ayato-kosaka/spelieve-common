@@ -1,1 +1,1 @@
-export * from './ItineraryCoverpropsInterface';
+export * from './ItineraryCoverPropsInterface';

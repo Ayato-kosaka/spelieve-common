@@ -5,9 +5,9 @@ export declare class Itineraries {
         subTitle: string;
         imageUrl: string;
         startDate: string;
-        endDate: string;
         tags: string;
         caption: string;
+        isUpdatable: string;
         createdAt: string;
         updatedAt: string;
     };
@@ -15,10 +15,10 @@ export declare class Itineraries {
     title: string;
     subTitle?: string;
     imageUrl?: string;
-    startDate?: Date;
-    endDate?: Date;
+    startDate: Date;
     tags: Array<string>;
     caption: string;
+    isUpdatable: boolean;
     createdAt: Date;
     updatedAt: Date;
 }

@@ -1,7 +1,9 @@
 export interface PlanGroupsListInterface {
     plans: Array<string>;
     representativePlanID: string;
-    representativeStartTime: Date;
+    dayNumber: number;
+    time: Date;
+    representativeStartDateTime: Date;
     createdAt: Date;
     updatedAt: Date;
 }
