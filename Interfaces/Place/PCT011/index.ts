@@ -1,3 +1,3 @@
-export * from './MPlacesListProviderPropsInterface';
+export * from './MPlacesListAddressInterface';
 export * from './MPlacesListValInterface';
 export * from './MPlacesListInterface';

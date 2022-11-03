@@ -3,6 +3,7 @@
  */
 export interface PlansMapInterface {
 	place_id: string;
+	title: string;
 	placeSpan: Date;
 	placeStartTime: Date;
 	placeEndTime: Date;

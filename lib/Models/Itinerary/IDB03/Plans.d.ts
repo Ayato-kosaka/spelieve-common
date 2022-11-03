@@ -2,6 +2,7 @@ export declare class Plans {
     static modelName: string;
     static Cols: {
         place_id: string;
+        title: string;
         placeSpan: string;
         placeStartTime: string;
         placeEndTime: string;
@@ -17,6 +18,7 @@ export declare class Plans {
     };
     static fromJSON(json: any): Plans;
     place_id: string;
+    title: string;
     placeSpan: Date;
     placeStartTime: Date;
     placeEndTime: Date;
