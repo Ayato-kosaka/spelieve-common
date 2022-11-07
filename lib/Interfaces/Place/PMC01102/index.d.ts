@@ -1,1 +1,1 @@
-export * from './PlaceListPropsInterface';
+export * from './PlacesListPropsInterface';

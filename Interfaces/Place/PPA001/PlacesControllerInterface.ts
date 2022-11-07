@@ -5,5 +5,5 @@ import { GooglePlaceData, GooglePlaceDetail } from 'react-native-google-places-a
  */
 export interface PlacesControllerInterface {
 	onAutoCompleteClicked: (data: GooglePlaceData, detail: GooglePlaceDetail | null) => void;
-	onPlaceSelected: () => void;
+	onPlaceSelected: (place_id: string) => void;
 }
