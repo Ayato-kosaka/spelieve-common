@@ -7,5 +7,6 @@ import * as SpelieveInterface from '../../../Interfaces';
  */
 export interface MPlacesListValInterface {
 	placesList: Array<SpelieveInterface.MPlacesListInterface>;
-	setAdress: React.Dispatch<React.SetStateAction<SpelieveInterface.MPlacesListAddressInterface>>;
+	setAddress: React.Dispatch<React.SetStateAction<SpelieveInterface.MPlacesListAddressInterface>>;
+	retrieveMore: () => Promise<void>;
 }
