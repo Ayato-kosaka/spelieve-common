@@ -9,4 +9,5 @@ export interface MPlacesListValInterface {
 	placesList: Array<SpelieveInterface.MPlacesListInterface>;
 	setAddress: React.Dispatch<React.SetStateAction<SpelieveInterface.MPlacesListAddressInterface>>;
 	retrieveMore: () => Promise<void>;
+	isFirstLoading: boolean;
 }
