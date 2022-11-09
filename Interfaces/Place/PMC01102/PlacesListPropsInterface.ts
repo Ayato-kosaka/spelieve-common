@@ -2,5 +2,5 @@
  * Export interface of PlacesListProps object.
  */
 export interface PlacesListPropsInterface {
-	onPlaceSelected: () => void;
+	onPlaceSelected: (place_id: string) => void;
 }
