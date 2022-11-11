@@ -2,13 +2,13 @@
  * Export interface of PlansMap object.
  */
 export interface PlansMapInterface {
-	place_id: string;
+	place_id?: string;
 	title: string;
 	placeSpan: Date;
 	placeStartTime: Date;
 	placeEndTime: Date;
 	tags: Array<string>;
-	imageUrl: string;
+	imageUrl?: string;
 	memo?: string;
 	transportationMode?: string;
 	transportationDepartureTime?: Date;

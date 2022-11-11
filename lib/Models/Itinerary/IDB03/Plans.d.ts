@@ -17,13 +17,13 @@ export declare class Plans {
         updatedAt: string;
     };
     static fromJSON(json: any): Plans;
-    place_id: string;
+    place_id?: string;
     title: string;
     placeSpan: Date;
     placeStartTime: Date;
     placeEndTime: Date;
     tags: Array<string>;
-    imageUrl: string;
+    imageUrl?: string;
     memo?: string;
     transportationMode?: string;
     transportationDepartureTime?: Date;
