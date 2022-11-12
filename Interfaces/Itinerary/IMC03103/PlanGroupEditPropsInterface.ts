@@ -3,8 +3,8 @@ import { QueryDocumentSnapshot } from '@firebase/firestore';
 import * as SpelieveInterface from '../../../Interfaces';
 
 /**
- * Export interface of PlanGroupsEditProps object.
+ * Export interface of PlanGroupEditProps object.
  */
-export interface PlanGroupsEditPropsInterface {
+export interface PlanGroupEditPropsInterface {
 	planGroupsDoc: QueryDocumentSnapshot<SpelieveInterface.PlanGroupsListInterface>;
 }

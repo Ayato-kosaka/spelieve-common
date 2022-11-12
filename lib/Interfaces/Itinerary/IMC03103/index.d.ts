@@ -1,1 +1,1 @@
-export * from './PlanGroupsEditPropsInterface';
+export * from './PlanGroupEditPropsInterface';
