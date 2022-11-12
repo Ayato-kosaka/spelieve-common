@@ -24,5 +24,5 @@ export const FirestoreConverter = <model, T>(
 	/**
 	 * Convert custom Type T before be saved to Firestore.
 	 */
-	toFirestore: (data: T): model => toModel(data),
+	toFirestore: (data: T): model => ({...toModel(data), updatedAt: new Date() }),
 });
