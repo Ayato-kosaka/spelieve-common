@@ -12,7 +12,7 @@ export const formatToHHMM = (date: Date): string => {
 	return `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}`;
 };
 
-export const add = (base: Date, addition: Date, types: ('Month' | 'Date' | 'Hours' | 'Minutes' | 'Seconds')[]) => {
+export const addition = (base: Date, addition: Date, types: ('Month' | 'Date' | 'Hours' | 'Minutes' | 'Seconds')[]) => {
 	const ret = new Date(base.getTime());
 	if (types.includes('Month')) {
 		ret.setMonth(base.getMonth() + addition.getMonth());
@@ -28,6 +28,26 @@ export const add = (base: Date, addition: Date, types: ('Month' | 'Date' | 'Hour
 	}
 	if (types.includes('Seconds')) {
 		ret.setSeconds(base.getSeconds() + addition.getSeconds());
+	}
+	return ret;
+};
+
+export const subtraction = (base: Date, subtraction: Date, types: ('Month' | 'Date' | 'Hours' | 'Minutes' | 'Seconds')[]) => {
+	const ret = new Date(base.getTime());
+	if (types.includes('Month')) {
+		ret.setMonth(base.getMonth() - subtraction.getMonth());
+	}
+	if (types.includes('Date')) {
+		ret.setDate(base.getDate() - subtraction.getDate());
+	}
+	if (types.includes('Hours')) {
+		ret.setHours(base.getHours() - subtraction.getHours());
+	}
+	if (types.includes('Minutes')) {
+		ret.setMinutes(base.getMinutes() - subtraction.getMinutes());
+	}
+	if (types.includes('Seconds')) {
+		ret.setSeconds(base.getSeconds() - subtraction.getSeconds());
 	}
 	return ret;
 };
