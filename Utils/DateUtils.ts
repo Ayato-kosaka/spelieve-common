@@ -32,7 +32,11 @@ export const addition = (base: Date, addition: Date, types: ('Month' | 'Date' | 
 	return ret;
 };
 
-export const subtraction = (base: Date, subtraction: Date, types: ('Month' | 'Date' | 'Hours' | 'Minutes' | 'Seconds')[]) => {
+export const subtraction = (
+	base: Date,
+	subtraction: Date,
+	types: ('Month' | 'Date' | 'Hours' | 'Minutes' | 'Seconds')[],
+) => {
 	const ret = new Date(base.getTime());
 	if (types.includes('Month')) {
 		ret.setMonth(base.getMonth() - subtraction.getMonth());
