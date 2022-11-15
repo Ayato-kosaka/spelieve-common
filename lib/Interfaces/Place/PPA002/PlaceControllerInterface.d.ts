@@ -1,8 +1,7 @@
 import React from 'react';
+import * as SpelieveInterface from '../../../Interfaces';
 export interface PlaceControllerInterface {
     onCreateItineraryClicked: (placeName: string) => void;
-    onShowMoreDetailClicked: () => void;
-    onShowMoreReviewClicked: () => void;
     onImageClicked: (event: React.ChangeEvent<HTMLInputElement>) => void;
-    onShowMoreImageClicked: () => void;
+    displayOpeningHours: (openingHours: SpelieveInterface.MPlaceOpeningHoursInterface[] | undefined) => string | Array<[string, string]>;
 }
