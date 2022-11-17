@@ -4,6 +4,7 @@ import * as SpelieveInterface from '../../../Interfaces';
  * Export interface of MPlaceOne object.
  */
 export interface MPlaceOneInterface {
+	place: string | Array<[string, string]>;
 	place_id: string;
 	language: string;
 	name: string;
