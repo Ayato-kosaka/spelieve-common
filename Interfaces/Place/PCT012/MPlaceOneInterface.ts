@@ -4,7 +4,7 @@ import * as SpelieveInterface from '../../../Interfaces';
  * Export interface of MPlaceOne object.
  */
 export interface MPlaceOneInterface {
-	place: string | Array<[string, string]>;
+	openingHours: string | Array<[string, string]>;
 	place_id: string;
 	language: string;
 	name: string;
@@ -23,7 +23,6 @@ export interface MPlaceOneInterface {
 	sublocalityLevel4?: string;
 	premise?: string;
 	formatted_phone_number?: string;
-	openingHours?: SpelieveInterface.MPlaceOpeningHoursInterface[];
 	rating?: number;
 	popularTags: Array<string>;
 	averageStayTime?: Date;
