@@ -10,7 +10,7 @@ export interface PlansMapInterface {
 	tags: Array<string>;
 	imageUrl?: string;
 	memo?: string;
-	transportationMode?: string;
+	transportationMode?: google.maps.TravelMode;
 	transportationDepartureTime?: Date;
 	transportationArrivalTime?: Date;
 	transportationSpan: Date;
