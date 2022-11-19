@@ -17,7 +17,7 @@ export declare class Plans {
         avoidHighways: string;
         avoidTolls: string;
         transitModes: string;
-        transitRoutingPreference: string;
+        transitRoutePreference: string;
         createdAt: string;
         updatedAt: string;
     };
@@ -38,7 +38,7 @@ export declare class Plans {
     avoidHighways: boolean;
     avoidTolls: boolean;
     transitModes: Array<string>;
-    transitRoutingPreference: string;
+    transitRoutePreference: string;
     createdAt: Date;
     updatedAt: Date;
 }

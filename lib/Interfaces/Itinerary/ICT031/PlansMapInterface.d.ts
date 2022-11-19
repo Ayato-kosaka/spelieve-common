@@ -15,7 +15,7 @@ export interface PlansMapInterface {
     avoidHighways: boolean;
     avoidTolls: boolean;
     transitModes: Array<string>;
-    transitRoutingPreference: string;
+    transitRoutePreference: string;
     createdAt: Date;
     updatedAt: Date;
 }
