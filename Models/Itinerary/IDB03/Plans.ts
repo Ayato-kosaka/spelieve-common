@@ -86,7 +86,7 @@ export class Plans {
 
 	avoidTolls: boolean;
 
-	transitModes: string;
+	transitModes: Array<string>;
 
 	transitRoutingPreference: string;
 
