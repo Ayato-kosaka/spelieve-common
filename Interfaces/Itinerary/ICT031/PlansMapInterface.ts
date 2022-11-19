@@ -14,6 +14,11 @@ export interface PlansMapInterface {
 	transportationDepartureTime?: Date;
 	transportationArrivalTime?: Date;
 	transportationSpan: Date;
+	avoidFerries: boolean;
+	avoidHighways: boolean;
+	avoidTolls: boolean;
+	transitModes: string;
+	transitRoutingPreference: string;
 	createdAt: Date;
 	updatedAt: Date;
 }
