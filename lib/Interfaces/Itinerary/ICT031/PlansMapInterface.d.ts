@@ -1,4 +1,8 @@
+/// <reference types="googlemaps" />
 export interface PlansMapInterface {
+    transportationMode?: google.maps.TravelMode;
+    transitModes: google.maps.TransitMode[];
+    transitRoutePreference: google.maps.TransitRoutePreference;
     place_id?: string;
     title: string;
     placeSpan: Date;
@@ -7,15 +11,12 @@ export interface PlansMapInterface {
     tags: Array<string>;
     imageUrl?: string;
     memo?: string;
-    transportationMode?: string;
     transportationDepartureTime?: Date;
     transportationArrivalTime?: Date;
     transportationSpan: Date;
     avoidFerries: boolean;
     avoidHighways: boolean;
     avoidTolls: boolean;
-    transitModes: Array<string>;
-    transitRoutePreference: string;
     createdAt: Date;
     updatedAt: Date;
 }
