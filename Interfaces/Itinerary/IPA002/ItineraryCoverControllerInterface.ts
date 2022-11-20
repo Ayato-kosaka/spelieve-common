@@ -1,3 +1,4 @@
+import React from 'react';
 import { TextInputChangeEventData } from 'react-native';
 
 import * as SpelieveInterface from '../../../Interfaces';
@@ -14,4 +15,5 @@ export interface ItineraryCoverControllerInterface {
 	deleteTag: (index: number) => void;
 	shouldNavigate: boolean;
 	isLoading: boolean;
+	setPageItinerary: React.Dispatch<React.SetStateAction<SpelieveInterface.ItineraryOneInterface | undefined>>;
 }
