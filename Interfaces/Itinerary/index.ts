@@ -7,5 +7,6 @@ export * from './IPA002';
 export * from './IPA003';
 export * from './IPA004';
 export * from './IMC03101';
+export * from './IMC03102';
 export * from './IMC03103';
 export * from './IMC03104';
