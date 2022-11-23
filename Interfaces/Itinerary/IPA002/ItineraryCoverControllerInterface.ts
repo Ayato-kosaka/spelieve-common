@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextInputChangeEventData } from 'react-native';
+import ReactNative from 'react-native';
 
 import * as SpelieveInterface from '../../../Interfaces';
 
@@ -11,7 +11,7 @@ export interface ItineraryCoverControllerInterface {
 	updateItinerary: () => void;
 	handleOnChange: (
 		column: keyof SpelieveInterface.ItineraryOneInterface,
-	) => ({ nativeEvent }: { nativeEvent: TextInputChangeEventData }) => void;
+	) => ({ nativeEvent }: { nativeEvent: ReactNative.TextInputChangeEventData }) => void;
 	deleteTag: (index: number) => void;
 	shouldNavigate: boolean;
 	isLoading: boolean;
