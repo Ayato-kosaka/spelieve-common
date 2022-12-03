@@ -15,7 +15,6 @@ export interface PlansMapInterface {
     transportationDepartureTime?: Date;
     transportationArrivalTime?: Date;
     transportationSpan: Date;
-    aviod: Array<string>;
     createdAt: Date;
     updatedAt: Date;
 }

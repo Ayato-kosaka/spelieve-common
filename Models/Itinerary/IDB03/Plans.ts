@@ -19,7 +19,7 @@ export class Plans {
 		transportationDepartureTime: 'transportationDepartureTime',
 		transportationArrivalTime: 'transportationArrivalTime',
 		transportationSpan: 'transportationSpan',
-		aviod: 'aviod',
+		avoid: 'avoid',
 		transitModes: 'transitModes',
 		transitRoutingPreference: 'transitRoutingPreference',
 		createdAt: 'createdAt',
@@ -43,7 +43,7 @@ export class Plans {
 			json.transportationArrivalTime instanceof Date ? json.transportationArrivalTime : undefined;
 		ret.transportationSpan =
 			json.transportationSpan instanceof Date ? json.transportationSpan : DateUtils.initialDate();
-		ret.aviod = json.aviod instanceof Array ? json.aviod : [];
+		ret.avoid = json.avoid instanceof Array ? json.avoid : [];
 		ret.transitModes = json.transitModes instanceof Array ? json.transitModes : [];
 		ret.transitRoutingPreference =
 			typeof json.transitRoutingPreference === 'string' ? json.transitRoutingPreference : '';
@@ -76,7 +76,7 @@ export class Plans {
 
 	transportationSpan: Date;
 
-	aviod: Array<string>;
+	avoid: Array<string>;
 
 	transitModes: Array<string>;
 
