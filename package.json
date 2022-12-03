@@ -23,8 +23,8 @@
   "homepage": "https://github.com/Ayato-kosaka/spelieve-common#readme",
   "dependencies": {
     "@firebase/firestore": "^3.7.1",
+    "@googlemaps/google-maps-services-js": "^3.3.16",
     "@react-native-community/datetimepicker": "^6.7.0",
-    "@types/googlemaps": "^3.43.3",
     "@types/react": "18.0.20",
     "@types/react-native": "0.70.6",
     "react-native-google-places-autocomplete": "^2.4.1"
