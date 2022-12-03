@@ -13,9 +13,7 @@ export declare class Plans {
         transportationDepartureTime: string;
         transportationArrivalTime: string;
         transportationSpan: string;
-        avoidFerries: string;
-        avoidHighways: string;
-        avoidTolls: string;
+        aviod: string;
         transitModes: string;
         transitRoutingPreference: string;
         createdAt: string;
@@ -34,9 +32,7 @@ export declare class Plans {
     transportationDepartureTime?: Date;
     transportationArrivalTime?: Date;
     transportationSpan: Date;
-    avoidFerries: boolean;
-    avoidHighways: boolean;
-    avoidTolls: boolean;
+    aviod: Array<string>;
     transitModes: Array<string>;
     transitRoutingPreference: string;
     createdAt: Date;

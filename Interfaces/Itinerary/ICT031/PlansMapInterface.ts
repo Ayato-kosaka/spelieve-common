@@ -7,6 +7,7 @@ export interface PlansMapInterface {
 	transportationMode?: GoogleMaps.TravelMode;
 	transitModes: GoogleMaps.TransitMode[];
 	transitRoutingPreference: GoogleMaps.TransitRoutingPreference;
+	avoid: GoogleMaps.TravelRestriction[];
 	place_id?: string;
 	title: string;
 	placeSpan: Date;
@@ -18,9 +19,7 @@ export interface PlansMapInterface {
 	transportationDepartureTime?: Date;
 	transportationArrivalTime?: Date;
 	transportationSpan: Date;
-	avoidFerries: boolean;
-	avoidHighways: boolean;
-	avoidTolls: boolean;
+	aviod: Array<string>;
 	createdAt: Date;
 	updatedAt: Date;
 }
