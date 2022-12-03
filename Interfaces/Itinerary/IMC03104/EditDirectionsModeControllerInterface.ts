@@ -8,7 +8,7 @@ import * as SpelieveInterface from '../../../Interfaces';
 export interface EditDirectionsModeControllerInterface {
 	directionsMode: Pick<
 		SpelieveInterface.PlansMapInterface,
-		'transportationMode' | 'transitModes' | 'transitRoutePreference' | 'avoidHighways' | 'avoidTolls' | 'avoidFerries'
+		'transportationMode' | 'transitModes' | 'transitRoutingPreference' | 'avoidHighways' | 'avoidTolls' | 'avoidFerries'
 	>;
 	setDirectionsMode: React.Dispatch<
 		React.SetStateAction<
@@ -16,7 +16,7 @@ export interface EditDirectionsModeControllerInterface {
 				SpelieveInterface.PlansMapInterface,
 				| 'transportationMode'
 				| 'transitModes'
-				| 'transitRoutePreference'
+				| 'transitRoutingPreference'
 				| 'avoidHighways'
 				| 'avoidTolls'
 				| 'avoidFerries'

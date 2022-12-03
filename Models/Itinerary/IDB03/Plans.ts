@@ -23,7 +23,7 @@ export class Plans {
 		avoidHighways: 'avoidHighways',
 		avoidTolls: 'avoidTolls',
 		transitModes: 'transitModes',
-		transitRoutePreference: 'transitRoutePreference',
+		transitRoutingPreference: 'transitRoutingPreference',
 		createdAt: 'createdAt',
 		updatedAt: 'updatedAt',
 	};
@@ -49,7 +49,8 @@ export class Plans {
 		ret.avoidHighways = typeof json.avoidHighways === 'boolean' ? json.avoidHighways : false;
 		ret.avoidTolls = typeof json.avoidTolls === 'boolean' ? json.avoidTolls : false;
 		ret.transitModes = json.transitModes instanceof Array ? json.transitModes : [];
-		ret.transitRoutePreference = typeof json.transitRoutePreference === 'string' ? json.transitRoutePreference : '';
+		ret.transitRoutingPreference =
+			typeof json.transitRoutingPreference === 'string' ? json.transitRoutingPreference : '';
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
 		return ret;
@@ -87,7 +88,7 @@ export class Plans {
 
 	transitModes: Array<string>;
 
-	transitRoutePreference: string;
+	transitRoutingPreference: string;
 
 	createdAt: Date;
 

@@ -1,8 +1,8 @@
-/// <reference types="googlemaps" />
+import GoogleMaps from '@googlemaps/google-maps-services-js';
 export interface PlansMapInterface {
-    transportationMode?: google.maps.TravelMode;
-    transitModes: google.maps.TransitMode[];
-    transitRoutePreference: google.maps.TransitRoutePreference;
+    transportationMode?: GoogleMaps.TravelMode;
+    transitModes: GoogleMaps.TransitMode;
+    transitRoutingPreference: GoogleMaps.TransitRoutingPreference;
     place_id?: string;
     title: string;
     placeSpan: Date;
