@@ -5,7 +5,7 @@ import GoogleMaps from '@googlemaps/google-maps-services-js';
  */
 export interface PlansMapInterface {
 	transportationMode?: GoogleMaps.TravelMode;
-	transitModes: GoogleMaps.TransitMode;
+	transitModes: GoogleMaps.TransitMode[];
 	transitRoutingPreference: GoogleMaps.TransitRoutingPreference;
 	place_id?: string;
 	title: string;
