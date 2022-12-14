@@ -1,6 +1,5 @@
 import { DateTimePickerEvent } from '@react-native-community/datetimepicker';
 import ReactNative from 'react-native';
-import { GooglePlaceData } from 'react-native-google-places-autocomplete';
 import { PlaceAutocompleteResult } from '@googlemaps/google-maps-services-js';
 
 import * as SpelieveInterface from '../../../Interfaces';
