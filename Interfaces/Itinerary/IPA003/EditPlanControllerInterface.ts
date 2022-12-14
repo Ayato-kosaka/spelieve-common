@@ -1,6 +1,6 @@
+import GoogleMaps from '@googlemaps/google-maps-services-js';
 import { DateTimePickerEvent } from '@react-native-community/datetimepicker';
 import ReactNative from 'react-native';
-import { PlaceAutocompleteResult } from '@googlemaps/google-maps-services-js';
 
 import * as SpelieveInterface from '../../../Interfaces';
 
@@ -18,6 +18,6 @@ export interface EditPlanControllerInterface {
 	updateRepresentativeStartDateTime: (event: DateTimePickerEvent, date?: Date | undefined) => void;
 	setPlanToRepresentativePlan: () => void;
 	onChangeSearchPlace: (e: ReactNative.NativeSyntheticEvent<ReactNative.TextInputChangeEventData>) => void;
-	onAutoCompleteClicked: (data: PlaceAutocompleteResult) => void;
+	onAutoCompleteClicked: (data: GoogleMaps.PlaceAutocompleteResult) => void;
 	onChangeMemo: ({ nativeEvent }: { nativeEvent: ReactNative.TextInputChangeEventData }) => void;
 }
