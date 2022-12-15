@@ -6,4 +6,5 @@ export interface SearchPlacePropsInterface {
     fetchDetails: boolean;
     value?: string;
     onChange?: (e: ReactNative.NativeSyntheticEvent<ReactNative.TextInputChangeEventData>) => void;
+    style?: ReactNative.StyleProp<ReactNative.ViewStyle>;
 }
