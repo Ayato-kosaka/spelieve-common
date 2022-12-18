@@ -18,6 +18,6 @@ export interface EditPlanControllerInterface {
 	updateRepresentativeStartDateTime: (event: DateTimePickerEvent, date?: Date | undefined) => void;
 	setPlanToRepresentativePlan: () => void;
 	onChangeSearchPlace: (e: ReactNative.NativeSyntheticEvent<ReactNative.TextInputChangeEventData>) => void;
-	onAutoCompleteClicked: (data: GoogleMaps.PlaceAutocompleteResult) => void;
+	onAutocompleteClicked: (data: GoogleMaps.PlaceAutocompleteResult) => void;
 	onChangeMemo: ({ nativeEvent }: { nativeEvent: ReactNative.TextInputChangeEventData }) => void;
 }
