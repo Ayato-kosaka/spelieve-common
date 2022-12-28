@@ -3,8 +3,6 @@ export declare class PlanGroups {
     static Cols: {
         plans: string;
         representativePlanID: string;
-        dayNumber: string;
-        time: string;
         representativeStartDateTime: string;
         createdAt: string;
         updatedAt: string;
@@ -12,8 +10,6 @@ export declare class PlanGroups {
     static fromJSON(json: any): PlanGroups;
     plans: Array<string>;
     representativePlanID: string;
-    dayNumber: number;
-    time: Date;
     representativeStartDateTime: Date;
     createdAt: Date;
     updatedAt: Date;

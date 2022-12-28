@@ -1,2 +1,2 @@
-export * from './PlanGroupsListValInterface';
 export * from './PlanGroupsListInterface';
+export * from './PlanGroupsListValInterface';
