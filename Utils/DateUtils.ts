@@ -3,7 +3,7 @@ export const milliSecondsADay: number = 24 * 60 * 60 * 1000;
 export const formatToHHMM = (date: Date): string => {
 	return `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}`;
 };
-export const formatToHHMM = (hour: string, min: string): string => {
+export const formatToHrsMin = (hour: string, min: string): string => {
 	if (hour === '0') {
 		return `${min}Min`;
 	}
