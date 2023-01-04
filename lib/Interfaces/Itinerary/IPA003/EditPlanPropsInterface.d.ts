@@ -1,5 +1,5 @@
 export interface EditPlanPropsInterface {
     itineraryID?: string;
-    PlanGroupsIndex?: number;
+    PlanGroupID?: string;
     planID?: string;
 }
