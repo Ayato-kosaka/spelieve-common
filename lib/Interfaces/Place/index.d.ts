@@ -4,6 +4,8 @@ export * from './PPA001';
 export * from './PCO001';
 export * from './PMC01101';
 export * from './PMC01102';
+export * from './PMC01201';
+export * from './PMC01202';
 export * from './PPA002';
 export * from './PCT012';
 export * from './PBL002';
