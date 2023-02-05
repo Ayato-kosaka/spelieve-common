@@ -6,6 +6,7 @@ export interface ItineraryOneInterface {
     tags: Array<string>;
     caption: string;
     isUpdatable: boolean;
+    thumbnailID?: string;
     createdAt: Date;
     updatedAt: Date;
 }

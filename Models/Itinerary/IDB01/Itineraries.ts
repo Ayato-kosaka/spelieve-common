@@ -14,6 +14,7 @@ export class Itineraries {
 		tags: 'tags',
 		caption: 'caption',
 		isUpdatable: 'isUpdatable',
+		thumbnailID: 'thumbnailID',
 		createdAt: 'createdAt',
 		updatedAt: 'updatedAt',
 	};
@@ -27,6 +28,7 @@ export class Itineraries {
 		ret.tags = json.tags instanceof Array ? json.tags : [];
 		ret.caption = typeof json.caption === 'string' ? json.caption : '';
 		ret.isUpdatable = typeof json.isUpdatable === 'boolean' ? json.isUpdatable : false;
+		ret.thumbnailID = typeof json.thumbnailID === 'string' ? json.thumbnailID : undefined;
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
 		return ret;
@@ -45,6 +47,8 @@ export class Itineraries {
 	caption: string;
 
 	isUpdatable: boolean;
+
+	thumbnailID?: string;
 
 	createdAt: Date;
 

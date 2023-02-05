@@ -8,6 +8,7 @@ export declare class Itineraries {
         tags: string;
         caption: string;
         isUpdatable: string;
+        thumbnailID: string;
         createdAt: string;
         updatedAt: string;
     };
@@ -19,6 +20,7 @@ export declare class Itineraries {
     tags: Array<string>;
     caption: string;
     isUpdatable: boolean;
+    thumbnailID?: string;
     createdAt: Date;
     updatedAt: Date;
 }
