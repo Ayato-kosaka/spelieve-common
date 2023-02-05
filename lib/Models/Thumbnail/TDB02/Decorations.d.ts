@@ -9,6 +9,8 @@ export declare class Decorations {
         order: string;
         color: string;
         key: string;
+        createdAt: string;
+        updatedAt: string;
     };
     static fromJSON(json: any): Decorations;
     decorationType: string;
@@ -19,4 +21,6 @@ export declare class Decorations {
     order: number;
     color: string;
     key?: string;
+    createdAt: Date;
+    updatedAt: Date;
 }

@@ -1,7 +1,7 @@
 /**
- * Export interface of MThumbnailOne object.
+ * Export interface of MThumbnailList object.
  */
-export interface MThumbnailOneInterface {
+export interface MThumbnailListInterface {
 	imageUrl: string;
 	backgroundItemType: string;
 	copied_count: number;

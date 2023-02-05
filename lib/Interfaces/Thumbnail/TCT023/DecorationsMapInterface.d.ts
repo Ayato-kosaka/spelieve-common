@@ -7,4 +7,6 @@ export interface DecorationsMapInterface {
     order: number;
     color: string;
     key?: string;
+    createdAt: Date;
+    updatedAt: Date;
 }
