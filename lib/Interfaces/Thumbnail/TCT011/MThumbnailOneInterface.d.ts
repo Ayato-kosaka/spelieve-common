@@ -1,7 +1,7 @@
 export interface MThumbnailOneInterface {
     imageUrl: string;
     backgroundItemType: string;
-    copied_count: number;
+    copiedCount: number;
     createdAt: Date;
     updatedAt: Date;
 }
