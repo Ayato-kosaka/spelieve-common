@@ -3,14 +3,14 @@ export declare class MThumbnail {
     static Cols: {
         imageUrl: string;
         backgroundItemType: string;
-        copiedCount: string;
+        prevThumbnailID: string;
         createdAt: string;
         updatedAt: string;
     };
     static fromJSON(json: any): MThumbnail;
     imageUrl: string;
     backgroundItemType: string;
-    copiedCount: number;
+    prevThumbnailID: number;
     createdAt: Date;
     updatedAt: Date;
 }
