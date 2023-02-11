@@ -10,7 +10,7 @@ export declare class MThumbnail {
     static fromJSON(json: any): MThumbnail;
     imageUrl: string;
     backgroundItemType: string;
-    prevThumbnailID: number;
+    prevThumbnailID?: string;
     createdAt: Date;
     updatedAt: Date;
 }

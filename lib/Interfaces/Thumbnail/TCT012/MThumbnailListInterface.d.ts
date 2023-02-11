@@ -1,7 +1,7 @@
 export interface MThumbnailListInterface {
     imageUrl: string;
     backgroundItemType: string;
-    prevThumbnailID: number;
+    prevThumbnailID?: string;
     createdAt: Date;
     updatedAt: Date;
 }
