@@ -6,7 +6,8 @@ export interface ItineraryOneInterface {
 	startDate: Date;
 	caption: string;
 	thumbnailID?: string;
-	textList: Array<string>;
+	textMap: { [key: string]: string };
+	storeUrlMap: { [key: string]: string };
 	isUpdatable: boolean;
 	createdAt: Date;
 	updatedAt: Date;

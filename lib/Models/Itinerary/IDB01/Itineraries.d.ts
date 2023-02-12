@@ -5,7 +5,8 @@ export declare class Itineraries {
         startDate: string;
         caption: string;
         thumbnailID: string;
-        textList: string;
+        textMap: string;
+        storeUrlMap: string;
         isUpdatable: string;
         createdAt: string;
         updatedAt: string;
@@ -15,7 +16,12 @@ export declare class Itineraries {
     startDate: Date;
     caption: string;
     thumbnailID?: string;
-    textList: Array<string>;
+    textMap: {
+        [key: string]: string;
+    };
+    storeUrlMap: {
+        [key: string]: string;
+    };
     isUpdatable: boolean;
     createdAt: Date;
     updatedAt: Date;
