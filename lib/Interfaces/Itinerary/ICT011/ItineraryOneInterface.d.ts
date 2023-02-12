@@ -1,12 +1,10 @@
 export interface ItineraryOneInterface {
-    title: string;
-    subTitle?: string;
     imageUrl?: string;
     startDate: Date;
-    tags: Array<string>;
     caption: string;
-    isUpdatable: boolean;
     thumbnailID?: string;
+    textList: Array<string>;
+    isUpdatable: boolean;
     createdAt: Date;
     updatedAt: Date;
 }
