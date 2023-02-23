@@ -1,3 +1,4 @@
+import * as SpelieveInterface from '../../../Interfaces';
 import * as DateUtils from '../../../Utils/DateUtils';
 
 /**
@@ -8,10 +9,9 @@ export class Decorations {
 
 	static Cols = {
 		decorationType: 'decorationType',
-		translateX: 'translateX',
-		translateY: 'translateY',
-		rotateZ: 'rotateZ',
-		scale: 'scale',
+		gesture: 'gesture',
+		maskGesture: 'maskGesture',
+		maskUri: 'maskUri',
 		order: 'order',
 		color: 'color',
 		key: 'key',
@@ -22,10 +22,9 @@ export class Decorations {
 	static fromJSON(json: any): Decorations {
 		const ret = new Decorations();
 		ret.decorationType = typeof json.decorationType === 'string' ? json.decorationType : '';
-		ret.translateX = typeof json.translateX === 'number' ? json.translateX : 0;
-		ret.translateY = typeof json.translateY === 'number' ? json.translateY : 0;
-		ret.rotateZ = typeof json.rotateZ === 'number' ? json.rotateZ : 0;
-		ret.scale = typeof json.scale === 'number' ? json.scale : 0;
+		ret.gesture = json.gesture instanceof Object ? json.gesture : {};
+		ret.maskGesture = json.maskGesture instanceof Object ? json.maskGesture : {};
+		ret.maskUri = typeof json.maskUri === 'string' ? json.maskUri : '';
 		ret.order = typeof json.order === 'number' ? json.order : 0;
 		ret.color = typeof json.color === 'string' ? json.color : '';
 		ret.key = typeof json.key === 'string' ? json.key : undefined;
@@ -36,13 +35,11 @@ export class Decorations {
 
 	decorationType: string;
 
-	translateX: number;
+	gesture: SpelieveInterface.DecorationsGestureInterface;
 
-	translateY: number;
+	maskGesture: SpelieveInterface.DecorationsGestureInterface;
 
-	rotateZ: number;
-
-	scale: number;
+	maskUri: string;
 
 	order: number;
 

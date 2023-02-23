@@ -1,11 +1,11 @@
+import * as SpelieveInterface from '../../../Interfaces';
 export declare class Decorations {
     static modelName: string;
     static Cols: {
         decorationType: string;
-        translateX: string;
-        translateY: string;
-        rotateZ: string;
-        scale: string;
+        gesture: string;
+        maskGesture: string;
+        maskUri: string;
         order: string;
         color: string;
         key: string;
@@ -14,10 +14,9 @@ export declare class Decorations {
     };
     static fromJSON(json: any): Decorations;
     decorationType: string;
-    translateX: number;
-    translateY: number;
-    rotateZ: number;
-    scale: number;
+    gesture: SpelieveInterface.DecorationsGestureInterface;
+    maskGesture: SpelieveInterface.DecorationsGestureInterface;
+    maskUri: string;
     order: number;
     color: string;
     key?: string;
