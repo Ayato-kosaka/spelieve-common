@@ -1,4 +1,4 @@
-export interface DecorationsGestureInterface {
+export interface DecorationsTransformInterface {
     translateX: number;
     translateY: number;
     rotateZ: number;

@@ -3,8 +3,8 @@ export declare class Decorations {
     static modelName: string;
     static Cols: {
         decorationType: string;
-        gesture: string;
-        maskGesture: string;
+        transform: string;
+        maskTransform: string;
         maskUri: string;
         order: string;
         color: string;
@@ -14,8 +14,8 @@ export declare class Decorations {
     };
     static fromJSON(json: any): Decorations;
     decorationType: string;
-    gesture: SpelieveInterface.DecorationsGestureInterface;
-    maskGesture: SpelieveInterface.DecorationsGestureInterface;
+    transform: SpelieveInterface.DecorationsTransformInterface;
+    maskTransform: SpelieveInterface.DecorationsTransformInterface;
     maskUri?: string;
     order: number;
     color: string;

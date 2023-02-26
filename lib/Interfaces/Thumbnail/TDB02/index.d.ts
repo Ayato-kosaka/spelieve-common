@@ -1,1 +1,1 @@
-export * from './DecorationsGestureInterface';
+export * from './DecorationsTransformInterface';

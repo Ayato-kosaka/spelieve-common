@@ -9,8 +9,8 @@ export class Decorations {
 
 	static Cols = {
 		decorationType: 'decorationType',
-		gesture: 'gesture',
-		maskGesture: 'maskGesture',
+		transform: 'transform',
+		maskTransform: 'maskTransform',
 		maskUri: 'maskUri',
 		order: 'order',
 		color: 'color',
@@ -22,8 +22,8 @@ export class Decorations {
 	static fromJSON(json: any): Decorations {
 		const ret = new Decorations();
 		ret.decorationType = typeof json.decorationType === 'string' ? json.decorationType : '';
-		ret.gesture = json.gesture instanceof Object ? json.gesture : {};
-		ret.maskGesture = json.maskGesture instanceof Object ? json.maskGesture : {};
+		ret.transform = json.transform instanceof Object ? json.transform : {};
+		ret.maskTransform = json.maskTransform instanceof Object ? json.maskTransform : {};
 		ret.maskUri = typeof json.maskUri === 'string' ? json.maskUri : undefined;
 		ret.order = typeof json.order === 'number' ? json.order : 0;
 		ret.color = typeof json.color === 'string' ? json.color : '';
@@ -35,9 +35,9 @@ export class Decorations {
 
 	decorationType: string;
 
-	gesture: SpelieveInterface.DecorationsGestureInterface;
+	transform: SpelieveInterface.DecorationsTransformInterface;
 
-	maskGesture: SpelieveInterface.DecorationsGestureInterface;
+	maskTransform: SpelieveInterface.DecorationsTransformInterface;
 
 	maskUri?: string;
 

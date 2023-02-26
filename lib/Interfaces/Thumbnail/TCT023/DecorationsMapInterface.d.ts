@@ -1,8 +1,8 @@
 import * as SpelieveInterface from '../../../Interfaces';
 export interface DecorationsMapInterface {
     decorationType: string;
-    gesture: SpelieveInterface.DecorationsGestureInterface;
-    maskGesture: SpelieveInterface.DecorationsGestureInterface;
+    transform: SpelieveInterface.DecorationsTransformInterface;
+    maskTransform: SpelieveInterface.DecorationsTransformInterface;
     maskUri?: string;
     order: number;
     color: string;
