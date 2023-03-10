@@ -4,6 +4,7 @@ export declare class MThumbnail {
         imageUrl: string;
         backgroundItemType: string;
         prevThumbnailID: string;
+        attached_count: string;
         createdAt: string;
         updatedAt: string;
     };
@@ -11,6 +12,7 @@ export declare class MThumbnail {
     imageUrl: string;
     backgroundItemType: string;
     prevThumbnailID?: string;
+    attached_count?: number;
     createdAt: Date;
     updatedAt: Date;
 }
