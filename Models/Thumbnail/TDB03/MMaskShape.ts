@@ -8,21 +8,21 @@ export class MMaskShape {
 
 	static Cols = {
 		storageUrl: 'storageUrl',
-		attached_count: 'attached_count',
+		attachedCount: 'attachedCount',
 		createdAt: 'createdAt',
 	};
 
 	static fromJSON(json: any): MMaskShape {
 		const ret = new MMaskShape();
 		ret.storageUrl = typeof json.storageUrl === 'string' ? json.storageUrl : '';
-		ret.attached_count = typeof json.attached_count === 'number' ? json.attached_count : undefined;
+		ret.attachedCount = typeof json.attachedCount === 'number' ? json.attachedCount : undefined;
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		return ret;
 	}
 
 	storageUrl: string;
 
-	attached_count?: number;
+	attachedCount?: number;
 
 	createdAt: Date;
 }

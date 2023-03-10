@@ -3,6 +3,6 @@
  */
 export interface MMaskShapeListInterface {
 	storageUrl: string;
-	attached_count?: number;
+	attachedCount?: number;
 	createdAt: Date;
 }
