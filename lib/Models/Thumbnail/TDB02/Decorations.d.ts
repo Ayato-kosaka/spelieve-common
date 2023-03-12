@@ -9,6 +9,7 @@ export declare class Decorations {
         order: string;
         color: string;
         key: string;
+        borderColor: string;
         createdAt: string;
         updatedAt: string;
     };
@@ -20,6 +21,7 @@ export declare class Decorations {
     order: number;
     color: string;
     key?: string;
+    borderColor: string;
     createdAt: Date;
     updatedAt: Date;
 }

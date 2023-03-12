@@ -11,6 +11,7 @@ export interface DecorationsMapInterface {
 	order: number;
 	color: string;
 	key?: string;
+	borderColor: string;
 	createdAt: Date;
 	updatedAt: Date;
 }

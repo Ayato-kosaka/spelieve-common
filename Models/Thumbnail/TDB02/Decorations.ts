@@ -15,6 +15,7 @@ export class Decorations {
 		order: 'order',
 		color: 'color',
 		key: 'key',
+		borderColor: 'borderColor',
 		createdAt: 'createdAt',
 		updatedAt: 'updatedAt',
 	};
@@ -28,6 +29,7 @@ export class Decorations {
 		ret.order = typeof json.order === 'number' ? json.order : 0;
 		ret.color = typeof json.color === 'string' ? json.color : '';
 		ret.key = typeof json.key === 'string' ? json.key : undefined;
+		ret.borderColor = typeof json.borderColor === 'string' ? json.borderColor : '';
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
 		return ret;
@@ -46,6 +48,8 @@ export class Decorations {
 	color: string;
 
 	key?: string;
+
+	borderColor: string;
 
 	createdAt: Date;
 
