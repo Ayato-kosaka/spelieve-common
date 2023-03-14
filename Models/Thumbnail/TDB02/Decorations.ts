@@ -16,6 +16,7 @@ export class Decorations {
 		color: 'color',
 		key: 'key',
 		borderColor: 'borderColor',
+		fontFamily: 'fontFamily',
 		createdAt: 'createdAt',
 		updatedAt: 'updatedAt',
 	};
@@ -30,6 +31,7 @@ export class Decorations {
 		ret.color = typeof json.color === 'string' ? json.color : '';
 		ret.key = typeof json.key === 'string' ? json.key : undefined;
 		ret.borderColor = typeof json.borderColor === 'string' ? json.borderColor : '';
+		ret.fontFamily = typeof json.fontFamily === 'string' ? json.fontFamily : undefined;
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
 		return ret;
@@ -50,6 +52,8 @@ export class Decorations {
 	key?: string;
 
 	borderColor: string;
+
+	fontFamily?: string;
 
 	createdAt: Date;
 

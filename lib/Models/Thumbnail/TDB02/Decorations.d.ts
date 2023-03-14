@@ -10,6 +10,7 @@ export declare class Decorations {
         color: string;
         key: string;
         borderColor: string;
+        fontFamily: string;
         createdAt: string;
         updatedAt: string;
     };
@@ -22,6 +23,7 @@ export declare class Decorations {
     color: string;
     key?: string;
     borderColor: string;
+    fontFamily?: string;
     createdAt: Date;
     updatedAt: Date;
 }

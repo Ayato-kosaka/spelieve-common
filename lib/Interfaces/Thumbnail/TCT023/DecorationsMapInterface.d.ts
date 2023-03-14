@@ -8,6 +8,7 @@ export interface DecorationsMapInterface {
     color: string;
     key?: string;
     borderColor: string;
+    fontFamily?: string;
     createdAt: Date;
     updatedAt: Date;
 }
