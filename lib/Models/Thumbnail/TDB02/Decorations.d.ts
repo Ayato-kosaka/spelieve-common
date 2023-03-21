@@ -11,6 +11,7 @@ export declare class Decorations {
         key: string;
         borderColor: string;
         fontFamily: string;
+        aspectRatio: string;
         createdAt: string;
         updatedAt: string;
     };
@@ -24,6 +25,7 @@ export declare class Decorations {
     key?: string;
     borderColor: string;
     fontFamily?: string;
+    aspectRatio: number;
     createdAt: Date;
     updatedAt: Date;
 }

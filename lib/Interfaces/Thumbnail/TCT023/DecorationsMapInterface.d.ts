@@ -9,6 +9,7 @@ export interface DecorationsMapInterface {
     key?: string;
     borderColor: string;
     fontFamily?: string;
+    aspectRatio: number;
     createdAt: Date;
     updatedAt: Date;
 }

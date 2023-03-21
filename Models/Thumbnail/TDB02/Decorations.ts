@@ -17,6 +17,7 @@ export class Decorations {
 		key: 'key',
 		borderColor: 'borderColor',
 		fontFamily: 'fontFamily',
+		aspectRatio: 'aspectRatio',
 		createdAt: 'createdAt',
 		updatedAt: 'updatedAt',
 	};
@@ -32,6 +33,7 @@ export class Decorations {
 		ret.key = typeof json.key === 'string' ? json.key : undefined;
 		ret.borderColor = typeof json.borderColor === 'string' ? json.borderColor : '';
 		ret.fontFamily = typeof json.fontFamily === 'string' ? json.fontFamily : undefined;
+		ret.aspectRatio = typeof json.aspectRatio === 'number' ? json.aspectRatio : 0;
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
 		return ret;
@@ -54,6 +56,8 @@ export class Decorations {
 	borderColor: string;
 
 	fontFamily?: string;
+
+	aspectRatio: number;
 
 	createdAt: Date;
 
