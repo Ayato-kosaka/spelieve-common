@@ -2,6 +2,7 @@ export declare class MThumbnail {
     static modelName: string;
     static Cols: {
         imageUrl: string;
+        aspectRatio: string;
         prevThumbnailID: string;
         attachedCount: string;
         dummyTextMap: string;
@@ -11,6 +12,7 @@ export declare class MThumbnail {
     };
     static fromJSON(json: any): MThumbnail;
     imageUrl: string;
+    aspectRatio: number;
     prevThumbnailID?: string;
     attachedCount: number;
     dummyTextMap: {

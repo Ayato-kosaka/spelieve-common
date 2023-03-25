@@ -1,5 +1,6 @@
 export interface MThumbnailOneInterface {
     imageUrl: string;
+    aspectRatio: number;
     prevThumbnailID?: string;
     attachedCount: number;
     dummyTextMap: {

@@ -8,6 +8,7 @@ export class MThumbnail {
 
 	static Cols = {
 		imageUrl: 'imageUrl',
+		aspectRatio: 'aspectRatio',
 		prevThumbnailID: 'prevThumbnailID',
 		attachedCount: 'attachedCount',
 		dummyTextMap: 'dummyTextMap',
@@ -19,6 +20,7 @@ export class MThumbnail {
 	static fromJSON(json: any): MThumbnail {
 		const ret = new MThumbnail();
 		ret.imageUrl = typeof json.imageUrl === 'string' ? json.imageUrl : '';
+		ret.aspectRatio = typeof json.aspectRatio === 'number' ? json.aspectRatio : 0;
 		ret.prevThumbnailID = typeof json.prevThumbnailID === 'string' ? json.prevThumbnailID : undefined;
 		ret.attachedCount = typeof json.attachedCount === 'number' ? json.attachedCount : 0;
 		ret.dummyTextMap = json.dummyTextMap instanceof Object ? json.dummyTextMap : {};
@@ -29,6 +31,8 @@ export class MThumbnail {
 	}
 
 	imageUrl: string;
+
+	aspectRatio: number;
 
 	prevThumbnailID?: string;
 

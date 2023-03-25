@@ -3,6 +3,7 @@
  */
 export interface MThumbnailListInterface {
 	imageUrl: string;
+	aspectRatio: number;
 	prevThumbnailID?: string;
 	attachedCount: number;
 	dummyTextMap: { [key: string]: string };
