@@ -4,13 +4,21 @@ export declare class MThumbnail {
         imageUrl: string;
         prevThumbnailID: string;
         attachedCount: string;
+        dummyTextMap: string;
+        dummyStoreUrlMap: string;
         createdAt: string;
         updatedAt: string;
     };
     static fromJSON(json: any): MThumbnail;
     imageUrl: string;
     prevThumbnailID?: string;
-    attachedCount?: number;
+    attachedCount: number;
+    dummyTextMap: {
+        [key: string]: string;
+    };
+    dummyStoreUrlMap: {
+        [key: string]: string;
+    };
     createdAt: Date;
     updatedAt: Date;
 }
