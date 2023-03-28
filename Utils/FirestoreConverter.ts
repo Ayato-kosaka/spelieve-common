@@ -1,4 +1,5 @@
 import { FirestoreDataConverter, QueryDocumentSnapshot, SnapshotOptions, Timestamp } from '@firebase/firestore';
+import { VerID } from 'Consts/Common';
 
 /**
  * Export a FirestoreDataConverter to transform custom Type T into Firestore data.
@@ -24,5 +25,5 @@ export const FirestoreConverter = <model, T>(
 	/**
 	 * Convert custom Type T before be saved to Firestore.
 	 */
-	toFirestore: (data: T): model => ({ ...toModel(data), updatedAt: new Date() }),
+	toFirestore: (data: T): model => ({ ...toModel(data), updatedAt: new Date(), ver: VerID }),
 });
