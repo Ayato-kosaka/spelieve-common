@@ -2,11 +2,9 @@ export declare class Plans {
     static modelName: string;
     static Cols: {
         place_id: string;
-        title: string;
         placeSpan: string;
         placeStartTime: string;
         placeEndTime: string;
-        tags: string;
         imageUrl: string;
         memo: string;
         transportationMode: string;
@@ -16,16 +14,17 @@ export declare class Plans {
         avoid: string;
         transitModes: string;
         transitRoutingPreference: string;
+        thumbnailID: string;
+        textMap: string;
+        storeUrlMap: string;
         createdAt: string;
         updatedAt: string;
     };
     static fromJSON(json: any): Plans;
     place_id?: string;
-    title: string;
     placeSpan: Date;
     placeStartTime: Date;
     placeEndTime: Date;
-    tags: Array<string>;
     imageUrl?: string;
     memo?: string;
     transportationMode?: string;
@@ -35,6 +34,13 @@ export declare class Plans {
     avoid: Array<string>;
     transitModes: Array<string>;
     transitRoutingPreference: string;
+    thumbnailID?: string;
+    textMap: {
+        [key: string]: string;
+    };
+    storeUrlMap: {
+        [key: string]: string;
+    };
     createdAt: Date;
     updatedAt: Date;
 }

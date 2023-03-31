@@ -8,11 +8,9 @@ export class Plans {
 
 	static Cols = {
 		place_id: 'place_id',
-		title: 'title',
 		placeSpan: 'placeSpan',
 		placeStartTime: 'placeStartTime',
 		placeEndTime: 'placeEndTime',
-		tags: 'tags',
 		imageUrl: 'imageUrl',
 		memo: 'memo',
 		transportationMode: 'transportationMode',
@@ -22,6 +20,9 @@ export class Plans {
 		avoid: 'avoid',
 		transitModes: 'transitModes',
 		transitRoutingPreference: 'transitRoutingPreference',
+		thumbnailID: 'thumbnailID',
+		textMap: 'textMap',
+		storeUrlMap: 'storeUrlMap',
 		createdAt: 'createdAt',
 		updatedAt: 'updatedAt',
 	};
@@ -29,11 +30,9 @@ export class Plans {
 	static fromJSON(json: any): Plans {
 		const ret = new Plans();
 		ret.place_id = typeof json.place_id === 'string' ? json.place_id : undefined;
-		ret.title = typeof json.title === 'string' ? json.title : '';
 		ret.placeSpan = json.placeSpan instanceof Date ? json.placeSpan : DateUtils.initialDate();
 		ret.placeStartTime = json.placeStartTime instanceof Date ? json.placeStartTime : DateUtils.initialDate();
 		ret.placeEndTime = json.placeEndTime instanceof Date ? json.placeEndTime : DateUtils.initialDate();
-		ret.tags = json.tags instanceof Array ? json.tags : [];
 		ret.imageUrl = typeof json.imageUrl === 'string' ? json.imageUrl : undefined;
 		ret.memo = typeof json.memo === 'string' ? json.memo : undefined;
 		ret.transportationMode = typeof json.transportationMode === 'string' ? json.transportationMode : undefined;
@@ -47,6 +46,9 @@ export class Plans {
 		ret.transitModes = json.transitModes instanceof Array ? json.transitModes : [];
 		ret.transitRoutingPreference =
 			typeof json.transitRoutingPreference === 'string' ? json.transitRoutingPreference : '';
+		ret.thumbnailID = typeof json.thumbnailID === 'string' ? json.thumbnailID : undefined;
+		ret.textMap = json.textMap instanceof Object ? json.textMap : {};
+		ret.storeUrlMap = json.storeUrlMap instanceof Object ? json.storeUrlMap : {};
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
 		return ret;
@@ -54,15 +56,11 @@ export class Plans {
 
 	place_id?: string;
 
-	title: string;
-
 	placeSpan: Date;
 
 	placeStartTime: Date;
 
 	placeEndTime: Date;
-
-	tags: Array<string>;
 
 	imageUrl?: string;
 
@@ -81,6 +79,12 @@ export class Plans {
 	transitModes: Array<string>;
 
 	transitRoutingPreference: string;
+
+	thumbnailID?: string;
+
+	textMap: { [key: string]: string };
+
+	storeUrlMap: { [key: string]: string };
 
 	createdAt: Date;
 
