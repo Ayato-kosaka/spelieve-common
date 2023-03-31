@@ -9,6 +9,7 @@ export interface PlansMapInterface {
 	transitRoutingPreference: GoogleMaps.TransitRoutingPreference;
 	avoid: GoogleMaps.TravelRestriction[];
 	place_id?: string;
+	title: string;
 	placeSpan: Date;
 	placeStartTime: Date;
 	placeEndTime: Date;

@@ -8,6 +8,7 @@ export class Plans {
 
 	static Cols = {
 		place_id: 'place_id',
+		title: 'title',
 		placeSpan: 'placeSpan',
 		placeStartTime: 'placeStartTime',
 		placeEndTime: 'placeEndTime',
@@ -30,6 +31,7 @@ export class Plans {
 	static fromJSON(json: any): Plans {
 		const ret = new Plans();
 		ret.place_id = typeof json.place_id === 'string' ? json.place_id : undefined;
+		ret.title = typeof json.title === 'string' ? json.title : '';
 		ret.placeSpan = json.placeSpan instanceof Date ? json.placeSpan : DateUtils.initialDate();
 		ret.placeStartTime = json.placeStartTime instanceof Date ? json.placeStartTime : DateUtils.initialDate();
 		ret.placeEndTime = json.placeEndTime instanceof Date ? json.placeEndTime : DateUtils.initialDate();
@@ -55,6 +57,8 @@ export class Plans {
 	}
 
 	place_id?: string;
+
+	title: string;
 
 	placeSpan: Date;
 
