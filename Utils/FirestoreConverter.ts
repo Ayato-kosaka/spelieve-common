@@ -1,5 +1,5 @@
 import { FirestoreDataConverter, QueryDocumentSnapshot, SnapshotOptions, Timestamp } from '@firebase/firestore';
-import { VerID } from 'Consts/Common';
+import { VerID } from '../Consts/Common';
 
 /**
  * Export a FirestoreDataConverter to transform custom Type T into Firestore data.
