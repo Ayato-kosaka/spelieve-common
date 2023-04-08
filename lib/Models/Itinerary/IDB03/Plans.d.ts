@@ -21,7 +21,6 @@ export declare class Plans {
         storeUrlMap: string;
         createdAt: string;
         updatedAt: string;
-        ver: string;
     };
     static fromJSON(json: any): Plans;
     place_id?: string;
@@ -47,5 +46,4 @@ export declare class Plans {
     };
     createdAt: Date;
     updatedAt: Date;
-    ver: number;
 }

@@ -16,5 +16,4 @@ export interface DecorationsMapInterface {
 	aspectRatio: number;
 	createdAt: Date;
 	updatedAt: Date;
-	ver: number;
 }

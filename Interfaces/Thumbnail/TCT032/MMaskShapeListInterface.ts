@@ -6,5 +6,4 @@ export interface MMaskShapeListInterface {
 	attachedCount?: number;
 	createdAt: Date;
 	updatedAt: Date;
-	ver: number;
 }

@@ -12,5 +12,4 @@ export interface ItineraryOneInterface {
     isUpdatable: boolean;
     createdAt: Date;
     updatedAt: Date;
-    ver: number;
 }

@@ -29,5 +29,4 @@ export interface MPlaceOneInterface {
 	photoUrls: Array<string>;
 	createdAt: Date;
 	updatedAt: Date;
-	ver: number;
 }

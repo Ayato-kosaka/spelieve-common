@@ -21,5 +21,4 @@ export interface PlansMapInterface {
 	storeUrlMap: { [key: string]: string };
 	createdAt: Date;
 	updatedAt: Date;
-	ver: number;
 }

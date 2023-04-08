@@ -10,7 +10,6 @@ export declare class MThumbnail {
         dummyStoreUrlMap: string;
         createdAt: string;
         updatedAt: string;
-        ver: string;
     };
     static fromJSON(json: any): MThumbnail;
     imageUrl: string;
@@ -25,5 +24,4 @@ export declare class MThumbnail {
     };
     createdAt: Date;
     updatedAt: Date;
-    ver: number;
 }

@@ -11,5 +11,4 @@ export interface MThumbnailOneInterface {
     };
     createdAt: Date;
     updatedAt: Date;
-    ver: number;
 }
