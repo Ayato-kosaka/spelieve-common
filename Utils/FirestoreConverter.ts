@@ -1,7 +1,6 @@
 import { FirestoreDataConverter, QueryDocumentSnapshot, SnapshotOptions, Timestamp } from '@firebase/firestore';
 
 import { VerID } from '../Consts/Common';
-
 import { upgradeScheme } from '../UpgradeScheme/UpgradeSheme';
 
 /**
