@@ -43,7 +43,6 @@ export default (json: any): ItinerariesV2_1 => {
 			isUpdatable,
 			createdAt,
 			updatedAt,
-			ver: 2.1,
 		};
 	}
 };

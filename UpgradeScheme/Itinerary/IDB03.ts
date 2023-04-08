@@ -66,7 +66,6 @@ export default (json: any): PlansV2_1 => {
 			storeUrlMap,
 			createdAt,
 			updatedAt,
-			ver: 2.1,
 		};
 	}
 };
