@@ -1,4 +1,5 @@
 import { FirestoreDataConverter, QueryDocumentSnapshot, SnapshotOptions, Timestamp } from '@firebase/firestore';
+import { upgradeScheme } from 'UpgradeScheme/UpgradeSheme';
 
 import { VerID } from '../Consts/Common';
 
@@ -6,7 +7,7 @@ import { VerID } from '../Consts/Common';
  * Export a FirestoreDataConverter to transform custom Type T into Firestore data.
  */
 export const FirestoreConverter = <model, T>(
-	model: { fromJSON(data): model },
+	model: { modelID: string; fromJSON(data): model },
 	fromModel: (data: model) => T,
 	toModel: (data: T) => model,
 ): FirestoreDataConverter<T> => ({
@@ -20,7 +21,12 @@ export const FirestoreConverter = <model, T>(
 				json[key] = (json[key] as Timestamp).toDate();
 			}
 		});
-		return fromModel(model.fromJSON(json));
+
+		if (json.ver !== VerID && upgradeScheme[model.modelID]) {
+			return fromModel(upgradeScheme[model.modelID](json));
+		} else {
+			return fromModel(model.fromJSON(json));
+		}
 	},
 
 	/**
