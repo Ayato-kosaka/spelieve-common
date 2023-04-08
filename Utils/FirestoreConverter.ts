@@ -1,7 +1,8 @@
 import { FirestoreDataConverter, QueryDocumentSnapshot, SnapshotOptions, Timestamp } from '@firebase/firestore';
-import { upgradeScheme } from '@/UpgradeScheme/UpgradeSheme';
 
 import { VerID } from '../Consts/Common';
+
+import { upgradeScheme } from '@/UpgradeScheme/UpgradeSheme';
 
 /**
  * Export a FirestoreDataConverter to transform custom Type T into Firestore data.
