@@ -1,9 +1,4 @@
-import GoogleMaps from '@googlemaps/google-maps-services-js';
 export interface PlansMapInterface {
-    transportationMode?: GoogleMaps.TravelMode;
-    transitModes: GoogleMaps.TransitMode[];
-    transitRoutingPreference: GoogleMaps.TransitRoutingPreference;
-    avoid: GoogleMaps.TravelRestriction[];
     place_id?: string;
     title: string;
     placeSpan: Date;
@@ -11,9 +6,13 @@ export interface PlansMapInterface {
     placeEndTime: Date;
     imageUrl?: string;
     memo?: string;
+    transportationMode?: string;
     transportationDepartureTime?: Date;
     transportationArrivalTime?: Date;
     transportationSpan: Date;
+    avoid: Array<string>;
+    transitModes: Array<string>;
+    transitRoutingPreference: string;
     thumbnailID?: string;
     textMap: {
         [key: string]: string;
