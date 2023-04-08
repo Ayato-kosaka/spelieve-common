@@ -1,4 +1,5 @@
 export declare class m_itinerary_hashtags {
+    static modelID: string;
     static modelName: string;
     static Cols: {
         tag: string;

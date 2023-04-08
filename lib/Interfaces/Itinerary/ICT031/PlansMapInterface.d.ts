@@ -23,4 +23,5 @@ export interface PlansMapInterface {
     };
     createdAt: Date;
     updatedAt: Date;
+    ver: number;
 }

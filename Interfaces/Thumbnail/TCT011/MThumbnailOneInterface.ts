@@ -10,4 +10,5 @@ export interface MThumbnailOneInterface {
 	dummyStoreUrlMap: { [key: string]: string };
 	createdAt: Date;
 	updatedAt: Date;
+	ver: number;
 }

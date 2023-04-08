@@ -1,4 +1,5 @@
 export declare class PlanGroups {
+    static modelID: string;
     static modelName: string;
     static Cols: {
         plans: string;
@@ -6,6 +7,7 @@ export declare class PlanGroups {
         representativeStartDateTime: string;
         createdAt: string;
         updatedAt: string;
+        ver: string;
     };
     static fromJSON(json: any): PlanGroups;
     plans: Array<string>;
@@ -13,4 +15,5 @@ export declare class PlanGroups {
     representativeStartDateTime: Date;
     createdAt: Date;
     updatedAt: Date;
+    ver: number;
 }

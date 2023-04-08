@@ -4,6 +4,7 @@ import * as DateUtils from '../../../Utils/DateUtils';
  * Export HDB01m_itinerary_hashtags model class.
  */
 export class m_itinerary_hashtags {
+	static modelID = 'HDB01';
 	static modelName = 'm_itinerary_hashtags';
 
 	static Cols = {

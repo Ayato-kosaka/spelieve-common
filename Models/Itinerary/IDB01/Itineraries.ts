@@ -4,6 +4,7 @@ import * as DateUtils from '../../../Utils/DateUtils';
  * Export IDB01Itineraries model class.
  */
 export class Itineraries {
+	static modelID = 'IDB01';
 	static modelName = 'Itineraries';
 
 	static Cols = {
@@ -16,6 +17,7 @@ export class Itineraries {
 		isUpdatable: 'isUpdatable',
 		createdAt: 'createdAt',
 		updatedAt: 'updatedAt',
+		ver: 'ver',
 	};
 
 	static fromJSON(json: any): Itineraries {
@@ -29,6 +31,7 @@ export class Itineraries {
 		ret.isUpdatable = typeof json.isUpdatable === 'boolean' ? json.isUpdatable : false;
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
+		ret.ver = typeof json.ver === 'number' ? json.ver : 0;
 		return ret;
 	}
 
@@ -49,4 +52,6 @@ export class Itineraries {
 	createdAt: Date;
 
 	updatedAt: Date;
+
+	ver: number;
 }

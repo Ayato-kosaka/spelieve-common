@@ -4,6 +4,7 @@ import * as DateUtils from '../../../Utils/DateUtils';
  * Export IDB02PlanGroups model class.
  */
 export class PlanGroups {
+	static modelID = 'IDB02';
 	static modelName = 'PlanGroups';
 
 	static Cols = {
@@ -12,6 +13,7 @@ export class PlanGroups {
 		representativeStartDateTime: 'representativeStartDateTime',
 		createdAt: 'createdAt',
 		updatedAt: 'updatedAt',
+		ver: 'ver',
 	};
 
 	static fromJSON(json: any): PlanGroups {
@@ -22,6 +24,7 @@ export class PlanGroups {
 			json.representativeStartDateTime instanceof Date ? json.representativeStartDateTime : DateUtils.initialDate();
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
+		ret.ver = typeof json.ver === 'number' ? json.ver : 0;
 		return ret;
 	}
 
@@ -34,4 +37,6 @@ export class PlanGroups {
 	createdAt: Date;
 
 	updatedAt: Date;
+
+	ver: number;
 }

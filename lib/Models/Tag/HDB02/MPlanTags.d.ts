@@ -1,4 +1,5 @@
 export declare class MPlanTags {
+    static modelID: string;
     static modelName: string;
     static Cols: {
         tag: string;

@@ -5,6 +5,7 @@ import * as DateUtils from '../../../Utils/DateUtils';
  * Export PDB01MPlace model class.
  */
 export class MPlace {
+	static modelID = 'PDB01';
 	static modelName = 'MPlace';
 
 	static Cols = {
@@ -33,6 +34,7 @@ export class MPlace {
 		photoUrls: 'photoUrls',
 		createdAt: 'createdAt',
 		updatedAt: 'updatedAt',
+		ver: 'ver',
 	};
 
 	static fromJSON(json: any): MPlace {
@@ -65,6 +67,7 @@ export class MPlace {
 		ret.photoUrls = json.photoUrls instanceof Array ? json.photoUrls : [];
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
+		ret.ver = typeof json.ver === 'number' ? json.ver : 0;
 		return ret;
 	}
 
@@ -117,4 +120,6 @@ export class MPlace {
 	createdAt: Date;
 
 	updatedAt: Date;
+
+	ver: number;
 }

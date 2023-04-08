@@ -4,6 +4,7 @@ import * as DateUtils from '../../../Utils/DateUtils';
  * Export HDB02MPlanTags model class.
  */
 export class MPlanTags {
+	static modelID = 'HDB02';
 	static modelName = 'MPlanTags';
 
 	static Cols = {

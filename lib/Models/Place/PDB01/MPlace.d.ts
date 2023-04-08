@@ -1,5 +1,6 @@
 import * as SpelieveInterface from '../../../Interfaces';
 export declare class MPlace {
+    static modelID: string;
     static modelName: string;
     static Cols: {
         place_id: string;
@@ -27,6 +28,7 @@ export declare class MPlace {
         photoUrls: string;
         createdAt: string;
         updatedAt: string;
+        ver: string;
     };
     static fromJSON(json: any): MPlace;
     place_id: string;
@@ -54,4 +56,5 @@ export declare class MPlace {
     photoUrls: Array<string>;
     createdAt: Date;
     updatedAt: Date;
+    ver: number;
 }

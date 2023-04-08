@@ -5,4 +5,5 @@ export interface PlanGroupsListInterface {
     representativeStartDateTime: Date;
     createdAt: Date;
     updatedAt: Date;
+    ver: number;
 }
