@@ -11,7 +11,6 @@ export declare class Itineraries {
         isUpdatable: string;
         createdAt: string;
         updatedAt: string;
-        ver: string;
     };
     static fromJSON(json: any): Itineraries;
     imageUrl?: string;
@@ -27,5 +26,4 @@ export declare class Itineraries {
     isUpdatable: boolean;
     createdAt: Date;
     updatedAt: Date;
-    ver: number;
 }

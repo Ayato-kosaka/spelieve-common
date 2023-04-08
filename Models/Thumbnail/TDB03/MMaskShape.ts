@@ -12,7 +12,6 @@ export class MMaskShape {
 		attachedCount: 'attachedCount',
 		createdAt: 'createdAt',
 		updatedAt: 'updatedAt',
-		ver: 'ver',
 	};
 
 	static fromJSON(json: any): MMaskShape {
@@ -21,7 +20,6 @@ export class MMaskShape {
 		ret.attachedCount = typeof json.attachedCount === 'number' ? json.attachedCount : undefined;
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
-		ret.ver = typeof json.ver === 'number' ? json.ver : 0;
 		return ret;
 	}
 
@@ -32,6 +30,4 @@ export class MMaskShape {
 	createdAt: Date;
 
 	updatedAt: Date;
-
-	ver: number;
 }

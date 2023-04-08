@@ -21,7 +21,6 @@ export class Decorations {
 		aspectRatio: 'aspectRatio',
 		createdAt: 'createdAt',
 		updatedAt: 'updatedAt',
-		ver: 'ver',
 	};
 
 	static fromJSON(json: any): Decorations {
@@ -38,7 +37,6 @@ export class Decorations {
 		ret.aspectRatio = typeof json.aspectRatio === 'number' ? json.aspectRatio : 0;
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
-		ret.ver = typeof json.ver === 'number' ? json.ver : 0;
 		return ret;
 	}
 
@@ -65,6 +63,4 @@ export class Decorations {
 	createdAt: Date;
 
 	updatedAt: Date;
-
-	ver: number;
 }

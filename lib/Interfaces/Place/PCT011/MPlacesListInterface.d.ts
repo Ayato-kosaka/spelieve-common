@@ -25,5 +25,4 @@ export interface MPlacesListInterface {
     photoUrls: Array<string>;
     createdAt: Date;
     updatedAt: Date;
-    ver: number;
 }

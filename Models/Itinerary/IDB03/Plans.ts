@@ -27,7 +27,6 @@ export class Plans {
 		storeUrlMap: 'storeUrlMap',
 		createdAt: 'createdAt',
 		updatedAt: 'updatedAt',
-		ver: 'ver',
 	};
 
 	static fromJSON(json: any): Plans {
@@ -55,7 +54,6 @@ export class Plans {
 		ret.storeUrlMap = json.storeUrlMap instanceof Object ? json.storeUrlMap : {};
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
-		ret.ver = typeof json.ver === 'number' ? json.ver : 0;
 		return ret;
 	}
 
@@ -96,6 +94,4 @@ export class Plans {
 	createdAt: Date;
 
 	updatedAt: Date;
-
-	ver: number;
 }

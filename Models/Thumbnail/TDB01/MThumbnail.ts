@@ -16,7 +16,6 @@ export class MThumbnail {
 		dummyStoreUrlMap: 'dummyStoreUrlMap',
 		createdAt: 'createdAt',
 		updatedAt: 'updatedAt',
-		ver: 'ver',
 	};
 
 	static fromJSON(json: any): MThumbnail {
@@ -29,7 +28,6 @@ export class MThumbnail {
 		ret.dummyStoreUrlMap = json.dummyStoreUrlMap instanceof Object ? json.dummyStoreUrlMap : {};
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
-		ret.ver = typeof json.ver === 'number' ? json.ver : 0;
 		return ret;
 	}
 
@@ -48,6 +46,4 @@ export class MThumbnail {
 	createdAt: Date;
 
 	updatedAt: Date;
-
-	ver: number;
 }

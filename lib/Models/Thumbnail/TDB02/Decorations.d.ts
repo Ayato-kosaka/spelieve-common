@@ -15,7 +15,6 @@ export declare class Decorations {
         aspectRatio: string;
         createdAt: string;
         updatedAt: string;
-        ver: string;
     };
     static fromJSON(json: any): Decorations;
     decorationType: string;
@@ -30,5 +29,4 @@ export declare class Decorations {
     aspectRatio: number;
     createdAt: Date;
     updatedAt: Date;
-    ver: number;
 }
