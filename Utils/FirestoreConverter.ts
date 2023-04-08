@@ -9,7 +9,7 @@ import { VerID } from '../Consts/Common';
 export const FirestoreConverter = <model, T>(
 	model: { modelID: string; fromJSON(data): model },
 	fromModel: (data: model) => T,
-	toModel: (data: T) => model,
+	toModel: (data: T) => Omit<model, 'updatedAt' | 'ver'>,
 ): FirestoreDataConverter<T> => ({
 	/**
 	 * Convert data from Firestore to match custom Type T.
@@ -32,5 +32,5 @@ export const FirestoreConverter = <model, T>(
 	/**
 	 * Convert custom Type T before be saved to Firestore.
 	 */
-	toFirestore: (data: T): model => ({ ...toModel(data), updatedAt: new Date(), ver: VerID }),
+	toFirestore: (data: T): model => ({ ...toModel(data), updatedAt: new Date(), ver: VerID } as model),
 });
