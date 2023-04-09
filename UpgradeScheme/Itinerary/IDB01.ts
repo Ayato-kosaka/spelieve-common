@@ -18,7 +18,7 @@ export default (json: any): ItinerariesV2_1 => {
 		if (old.tags)
 			Object.assign(
 				textMap,
-				old.tags.reduce((prev, val, index) => Object.assign(prev, { ['label_' + (index+1).toString()]: val }), {}),
+				old.tags.reduce((prev, val, index) => Object.assign(prev, { ['label_' + (index + 1).toString()]: val }), {}),
 			);
 
 		// change: https://github.com/Ayato-kosaka/spelieve/issues/601
