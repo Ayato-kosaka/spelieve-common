@@ -25,7 +25,7 @@ export default (json: any): PlansV2_1 => {
 			});
 
 		// change: https://github.com/Ayato-kosaka/spelieve/issues/669
-		const thumbnailID = 'v2_0';
+		const thumbnailID = 'v2_0-16_9';
 
 		const {
 			place_id,
