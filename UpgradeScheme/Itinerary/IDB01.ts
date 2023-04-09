@@ -29,7 +29,7 @@ export default (json: any): ItinerariesV2_1 => {
 			});
 
 		// change: https://github.com/Ayato-kosaka/spelieve/issues/598
-		const thumbnailID = 'v2_0';
+		const thumbnailID = 'v2_0-1_1';
 
 		const { imageUrl, startDate, caption, isUpdatable, createdAt, updatedAt } = old;
 
