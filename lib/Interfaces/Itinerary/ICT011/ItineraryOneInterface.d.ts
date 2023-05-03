@@ -9,7 +9,7 @@ export interface ItineraryOneInterface {
     storeUrlMap: {
         [key: string]: string;
     };
-    isUpdatable: boolean;
+    isImmutable: boolean;
     createdAt: Date;
     updatedAt: Date;
 }

@@ -8,7 +8,7 @@ export declare class Itineraries {
         thumbnailID: string;
         textMap: string;
         storeUrlMap: string;
-        isUpdatable: string;
+        isImmutable: string;
         createdAt: string;
         updatedAt: string;
     };
@@ -23,7 +23,7 @@ export declare class Itineraries {
     storeUrlMap: {
         [key: string]: string;
     };
-    isUpdatable: boolean;
+    isImmutable: boolean;
     createdAt: Date;
     updatedAt: Date;
 }

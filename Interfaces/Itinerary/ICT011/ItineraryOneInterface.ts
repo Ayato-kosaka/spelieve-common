@@ -8,7 +8,7 @@ export interface ItineraryOneInterface {
 	thumbnailID?: string;
 	textMap: { [key: string]: string };
 	storeUrlMap: { [key: string]: string };
-	isUpdatable: boolean;
+	isImmutable: boolean;
 	createdAt: Date;
 	updatedAt: Date;
 }

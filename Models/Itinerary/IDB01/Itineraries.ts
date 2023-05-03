@@ -14,7 +14,7 @@ export class Itineraries {
 		thumbnailID: 'thumbnailID',
 		textMap: 'textMap',
 		storeUrlMap: 'storeUrlMap',
-		isUpdatable: 'isUpdatable',
+		isImmutable: 'isImmutable',
 		createdAt: 'createdAt',
 		updatedAt: 'updatedAt',
 	};
@@ -27,7 +27,7 @@ export class Itineraries {
 		ret.thumbnailID = typeof json.thumbnailID === 'string' ? json.thumbnailID : undefined;
 		ret.textMap = json.textMap instanceof Object ? json.textMap : {};
 		ret.storeUrlMap = json.storeUrlMap instanceof Object ? json.storeUrlMap : {};
-		ret.isUpdatable = typeof json.isUpdatable === 'boolean' ? json.isUpdatable : false;
+		ret.isImmutable = typeof json.isImmutable === 'boolean' ? json.isImmutable : false;
 		ret.createdAt = json.createdAt instanceof Date ? json.createdAt : DateUtils.initialDate();
 		ret.updatedAt = json.updatedAt instanceof Date ? json.updatedAt : DateUtils.initialDate();
 		return ret;
@@ -45,7 +45,7 @@ export class Itineraries {
 
 	storeUrlMap: { [key: string]: string };
 
-	isUpdatable: boolean;
+	isImmutable: boolean;
 
 	createdAt: Date;
 
