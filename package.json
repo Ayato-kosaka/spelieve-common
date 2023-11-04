@@ -1,6 +1,6 @@
 {
 	"name": "spelieve-common",
-	"version": "1.1.180",
+	"version": "1.1.181",
 	"description": "Spelieve common library",
 	"scripts": {
 		"tsc": "tsc",
